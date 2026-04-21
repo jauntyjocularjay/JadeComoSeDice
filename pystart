@@ -1,0 +1,17 @@
+#!/bin/bash
+
+python -m venv venv
+
+source venv/Scripts/activate
+
+python -m pip install --upgrade pip
+
+pip install -r requirements
+
+touch .gitignore
+
+echo '# folders' >> .gitignore
+echo 'venv/' >> .gitignore
+echo '' >> .gitignore
+echo '# files' >> .gitignore
+echo '.env' >> .gitignore
