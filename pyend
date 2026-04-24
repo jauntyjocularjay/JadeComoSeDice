@@ -1,5 +1,0 @@
-#!/bin/bash
-
-pip freeze > requirements
-
-venv/Scripts/deactivate.bat
