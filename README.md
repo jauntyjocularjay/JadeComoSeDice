@@ -17,3 +17,5 @@
      - select your permissions
 1. Select Integration type
 1. Copy the generated URL
+1. Paste into browser
+1. Install into your server
