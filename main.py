@@ -7,8 +7,9 @@ from dotenv import load_dotenv
 from constants import *
 
 
+
 load_dotenv()
-token = os.getenv('DISCORD_TOKEN')
+token = os.getenv(DISCORD_TOKEN)
 
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
 

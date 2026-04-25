@@ -16,6 +16,7 @@ SWINDLER = 'Swindler'
 TECHNOSAVANT = 'Technosavant'
 TRACER = 'Tracer'
 XENOPHILE = 'Xenophile'
+DISCORD_TOKEN = 'DISCORD_TOKEN'
 
 D20 = {
     FUTURED20: {
