@@ -4,7 +4,7 @@ import random
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
-
+from constants import *
 
 
 load_dotenv()
@@ -44,8 +44,41 @@ async def roll(ctx, dice: str):
     outcomes = [random.randint(1, limit) for r in range(rolls)]
     total = sum(x for x in outcomes)
 
-
     result = f'{ctx.author.mention} rolled `{limit}d{rolls}` for:\n```{outcomes}```\nand a total of `{total}`'
     await ctx.send(result)
+
+@bot.command()
+async def Roll(ctx, dice: str):
+    await roll(ctx, dice)
+
+@bot.command()
+async def ROLL(ctx, dice: str):
+    await roll(ctx, dice)
+
+@bot.command()
+async def role(ctx, message: str):
+    message = message.lower()
+    result = f'I couldn\'t find the role in `{message}`.'
+
+    for x,y in D20[FUTURED20][ROLES].items():
+        x = x.lower()
+        if x in message:
+            result = f'Here is the info for the {x} class: {D20_BASE + y}'
+            await ctx.send(result)
+            break
+
+    await ctx.send(result)
+
+@bot.command()
+async def Role(ctx, message: str):
+    await role(ctx, message)
+
+@bot.command()
+async def roles(ctx, message: str):
+    await role(ctx, message)
+
+@bot.command()
+async def Roles(ctx, message: str):
+    await role(ctx, message)
 
 bot.run(token)
