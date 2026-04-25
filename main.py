@@ -1,39 +1,51 @@
-import random as Random
-import discord as Discord
-import logging
 import os
+import logging
+import random
+import discord
 from discord.ext import commands
 from dotenv import load_dotenv
 
-true = True
-false = False
+
 
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
 
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
-intents = Discord.Intents.default()
+
+description = """An example bot to showcase the discord.ext.commands extension
+module.
+
+There are a number of utility commands being showcased here."""
+
+intents = discord.Intents.default()
+intents.members = True
 intents.message_content = True
 
-bot = commands.Bot(command_prefix='!', intents=intents)
+bot = commands.Bot(command_prefix='//', description=description, intents=intents)
+
 
 @bot.event
 async def on_ready():
-    print(f"We are ready to go in, {bot.user.name}")
+    # Tell the type checker that User is filled up at this point
+    assert bot.user is not None
 
-@bot.command
-async def roll(ctx, *, dice: str = '1d6'):
-    d_index = dice.index('d')
+    print(f'Logged in as {bot.user} (ID: {bot.user.id})')
+    print('------')
 
-    number_of_dice_as_string = dice[:d_index]
-    number_of_sides_as_string = dice[d_index+1:]
+@bot.command()
+async def roll(ctx, dice: str):
+    """Rolls a dice in NdN format."""
+    try:
+        rolls, limit = map(int, dice.split('d'))
+    except Exception:
+        await ctx.send('Format has to be in NdN!')
+        return
 
-    number_of_dice = int(number_of_dice_as_string)
-    number_of_sides = int(number_of_sides_as_string)
+    outcomes = [random.randint(1, limit) for r in range(rolls)]
+    total = sum(x for x in outcomes)
 
-    result = [Random.randint(1,number_of_sides) for _ in range(number_of_dice)]
-    total = sum(x for x in result)
 
-    await ctx.send(f'{ctx.author.mention} rolled {number_of_dice} d{number_of_sides} for:\n    {result}\n    and a total of {total}')
+    result = f'{ctx.author.mention} rolled `{limit}d{rolls}` for:\n```{outcomes}```\nand a total of `{total}`'
+    await ctx.send(result)
 
-bot.run(token, log_handler=handler, log_level=logging.DEBUG)
+bot.run(token)
