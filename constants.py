@@ -17,6 +17,10 @@ TECHNOSAVANT = 'Technosavant'
 TRACER = 'Tracer'
 XENOPHILE = 'Xenophile'
 DISCORD_TOKEN = 'DISCORD_TOKEN'
+UTF8 = 'utf-8'
+W = 'w'
+DSCRD = { 'log': 'discord.log' }
+LOG = 'log'
 
 D20 = {
     FUTURED20: {

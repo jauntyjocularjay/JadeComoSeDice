@@ -11,12 +11,12 @@ from constants import *
 load_dotenv()
 token = os.getenv(DISCORD_TOKEN)
 
-handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
+handler = logging.FileHandler(filename=DSCRD[LOG], encoding=UTF8, mode=W)
 
-description = """An example bot to showcase the discord.ext.commands extension
-module.
+description = """ An example bot to showcase the discord.ext.commands extension module.
 
-There are a number of utility commands being showcased here."""
+There are a number of utility commands being showcased here.
+"""
 
 intents = discord.Intents.default()
 intents.members = True
