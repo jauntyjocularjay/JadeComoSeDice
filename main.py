@@ -65,7 +65,6 @@ async def role(ctx, message: str):
         x = x.lower()
         if x in message:
             result = f'Here is the info for the {x} class: {D20_BASE + y}'
-            await ctx.send(result)
             break
 
     await ctx.send(result)
@@ -75,11 +74,19 @@ async def Role(ctx, message: str):
     await role(ctx, message)
 
 @bot.command()
+async def ROLE(ctx, message: str):
+    await role(ctx, message)
+
+@bot.command()
 async def roles(ctx, message: str):
     await role(ctx, message)
 
 @bot.command()
 async def Roles(ctx, message: str):
+    await role(ctx, message)
+
+@bot.command()
+async def ROLES(ctx, message: str):
     await role(ctx, message)
 
 @bot.command()
