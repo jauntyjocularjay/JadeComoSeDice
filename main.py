@@ -5,7 +5,8 @@ import discord
 from discord.ext import commands
 from dotenv import load_dotenv
 from constants import DISCORD_TOKEN, UTF8, W, DSCRD, LOG
-from reference import D20, FUTURED20, ROLES, CYBERNETICS, README
+from reference import D20, FUTURED20, ROLES, CYBERNETICS, EQUIPMENT, README
+
 
 
 load_dotenv()
@@ -14,7 +15,6 @@ token = os.getenv(DISCORD_TOKEN)
 handler = logging.FileHandler(filename=DSCRD[LOG], encoding=UTF8, mode=W)
 
 description = """ An example bot to showcase the discord.ext.commands extension module.
-
 There are a number of utility commands being showcased here.
 """
 
@@ -79,15 +79,44 @@ async def Roles(ctx):
     await roles(ctx)
 
 @bot.command()
+async def equip(ctx):
+    result = f'FutureD20 Equipment: {D20[FUTURED20][EQUIPMENT][README]}'
+    await ctx.send(result)
+
+@bot.command()
+async def Equip(ctx):
+    await equip(ctx)
+
+@bot.command()
+async def equipment(ctx):
+    await equip(ctx)
+
+@bot.command()
+async def Equipment(ctx):
+    await equip(ctx)
+
+@bot.command()
 async def cybernetics(ctx):
     await ctx.send(f'The Cybernetics Reference: {D20[FUTURED20][CYBERNETICS][README]}')
+
+@bot.command()
+async def Cybernetics(ctx):
+    await cybernetics(ctx)
 
 @bot.command()
 async def augmentation(ctx):
     await cybernetics(ctx)
 
 @bot.command()
+async def Augmentation(ctx):
+    await cybernetics(ctx)
+
+@bot.command()
 async def augmentations(ctx):
+    await cybernetics(ctx)
+
+@bot.command()
+async def Augmentations(ctx):
     await cybernetics(ctx)
 
 
