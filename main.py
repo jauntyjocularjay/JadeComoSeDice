@@ -82,4 +82,17 @@ async def roles(ctx, message: str):
 async def Roles(ctx, message: str):
     await role(ctx, message)
 
-bot.run(token)
+@bot.command()
+async def cybernetics(ctx):
+    await ctx.send(f'The Cybernetics Reference: {D20_BASE}{D20[FUTURED20][CYBERNETICS][README]}')
+
+@bot.command()
+async def augmentation(ctx):
+    await cybernetics(ctx)
+
+@bot.command()
+async def augmentations(ctx):
+    await cybernetics(ctx)
+
+
+bot.run(str(token))
