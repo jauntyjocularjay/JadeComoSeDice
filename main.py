@@ -4,8 +4,8 @@ import random
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
-from constants import D20, D20_BASE, README, FUTURED20, CYBERNETICS, ROLES, DISCORD_TOKEN, UTF8, W, DSCRD, LOG
-
+from constants import DISCORD_TOKEN, UTF8, W, DSCRD, LOG
+from reference import D20, FUTURED20, ROLES, Page
 
 
 load_dotenv()
@@ -60,7 +60,7 @@ async def role(ctx, message: str):
     for x,y in D20[FUTURED20][ROLES].items():
         x = x.lower()
         if x in message:
-            result = f'Here is the info for the {x} class: {D20_BASE + y}'
+            result = f'Here is the info for the {x} class: {y}'
             break
 
     await ctx.send(result)
@@ -71,7 +71,7 @@ async def Role(ctx, message: str):
 
 @bot.command()
 async def roles(ctx):
-    result = f'Future D20 roles: {D20_BASE}{D20[FUTURED20][ROLES][README]}'
+    result = f'Future D20 roles: {Page.ROLES}'
     await ctx.send(result)
 
 @bot.command()
@@ -80,7 +80,7 @@ async def Roles(ctx):
 
 @bot.command()
 async def cybernetics(ctx):
-    await ctx.send(f'The Cybernetics Reference: {D20_BASE}{D20[FUTURED20][CYBERNETICS][README]}')
+    await ctx.send(f'The Cybernetics Reference: {Page.CYBERNETICS}')
 
 @bot.command()
 async def augmentation(ctx):
