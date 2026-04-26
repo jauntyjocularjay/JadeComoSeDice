@@ -4,7 +4,7 @@ import random
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
-from constants import *
+from constants import D20, D20_BASE, README, FUTURED20, CYBERNETICS, ROLES, DISCORD_TOKEN, UTF8, W, DSCRD, LOG
 
 
 
@@ -53,10 +53,6 @@ async def Roll(ctx, dice: str):
     await roll(ctx, dice)
 
 @bot.command()
-async def ROLL(ctx, dice: str):
-    await roll(ctx, dice)
-
-@bot.command()
 async def role(ctx, message: str):
     message = message.lower()
     result = f'I couldn\'t find the role in `{message}`.'
@@ -74,20 +70,13 @@ async def Role(ctx, message: str):
     await role(ctx, message)
 
 @bot.command()
-async def ROLE(ctx, message: str):
-    await role(ctx, message)
+async def roles(ctx):
+    result = f'Future D20 roles: {D20_BASE}{D20[FUTURED20][ROLES][README]}'
+    await ctx.send(result)
 
 @bot.command()
-async def roles(ctx, message: str):
-    await role(ctx, message)
-
-@bot.command()
-async def Roles(ctx, message: str):
-    await role(ctx, message)
-
-@bot.command()
-async def ROLES(ctx, message: str):
-    await role(ctx, message)
+async def Roles(ctx):
+    await roles(ctx)
 
 @bot.command()
 async def cybernetics(ctx):

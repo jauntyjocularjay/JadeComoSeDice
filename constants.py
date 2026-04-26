@@ -3,6 +3,7 @@ D20_BASE = 'https://github.com/jauntyjocularjay/D20Resources/tree/master'
 README = 'readme'
 LINK = 'link'
 FUTURED20 = 'FutureD20'
+CYBERNETICS = 'cybernetics'
 ROLES= 'roles'
 AMBASSADOR = 'Ambassador'
 DOGFIGHTER = 'Dogfighter'
@@ -23,7 +24,6 @@ W = 'w'
 DSCRD = { 'log': 'discord.log' }
 LOG = 'log'
 
-CYBERNETICS = 'cybernetics'
 
 D20 = {
     FUTURED20: {
@@ -31,6 +31,7 @@ D20 = {
             README: '/FutureD20/Cybernetics/readme.md'
         },
         ROLES: {
+            README: '/FutureD20/Classes/readme.md',
             AMBASSADOR: '/FutureD20/Classes/Ambassador.md',
             DOGFIGHTER: '/FutureD20/Classes/Dogfighter.md',
             DREADNOUGHT: '/FutureD20/Classes/Dreadnought.md',
