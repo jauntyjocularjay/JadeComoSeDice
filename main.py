@@ -65,7 +65,6 @@ async def role(ctx, message: str):
         x = x.lower()
         if x in message:
             result = f'Here is the info for the {x} class: {D20_BASE + y}'
-            await ctx.send(result)
             break
 
     await ctx.send(result)

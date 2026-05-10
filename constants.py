@@ -11,7 +11,6 @@ LOG = 'log'
 
 CYBERNETICS = 'cybernetics'
 
-
 ROLES= 'roles'
 AMBASSADOR = 'Ambassador'
 DOGFIGHTER = 'Dogfighter'
@@ -26,6 +25,8 @@ SWINDLER = 'Swindler'
 TECHNOSAVANT = 'Technosavant'
 TRACER = 'Tracer'
 XENOPHILE = 'Xenophile'
+
+ENVIRONMENTS = 'environments'
 
 EXPANDED_SKILLS = 'expanded skills'
 BLUFF = 'Bluff'
@@ -43,6 +44,7 @@ D20 = {
         CYBERNETICS: {
             README: '/FutureD20/Cybernetics/readme.md'
         },
+        ENVIRONMENTS: '/FutureD20/Environments.md',
         ROLES: {
             AMBASSADOR: '/FutureD20/Classes/Ambassador.md',
             DOGFIGHTER: '/FutureD20/Classes/Dogfighter.md',
