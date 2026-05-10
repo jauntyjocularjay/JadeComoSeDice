@@ -94,5 +94,56 @@ async def augmentation(ctx):
 async def augmentations(ctx):
     await cybernetics(ctx)
 
+# @bot.command()
+# async def futureequipment(ctx):
+#     await ctx.send(f'The Expanded Skills Reference: {D20_BASE}{D20[FUTURED20][EQUIPMENT][README]}')
+
+@bot.command()
+async def futureskills(ctx):
+    await ctx.send(f'The Expanded Skills Reference: {D20_BASE}{D20[FUTURED20][EXPANDED_SKILLS][README]}')
+
+@bot.command()
+async def bluff(ctx):
+    await ctx.send(f'{BLUFF}: {D20_BASE}{D20[FUTURED20][EXPANDED_SKILLS][BLUFF]}')
+
+@bot.command()
+async def computeruse(ctx):
+    await ctx.send(f'{COMPUTER_USE}: {D20_BASE}{D20[FUTURED20][EXPANDED_SKILLS][COMPUTER_USE]}')
+
+@bot.command()
+async def disabledevice(ctx):
+    await ctx.send(f'{DISABLE_DEVICE}: {D20_BASE}{D20[FUTURED20][EXPANDED_SKILLS][DISABLE_DEVICE]}')
+
+@bot.command()
+async def knowledgetechnology(ctx):
+    await ctx.send(f'{KNOWLEDGE_TECHNOLOGY}: {D20_BASE}{D20[FUTURED20][EXPANDED_SKILLS][KNOWLEDGE_TECHNOLOGY]}')
+
+@bot.command()
+async def knowledgetech(ctx):
+    await knowledgetechnology(ctx)
+
+@bot.command()
+async def techknowledge(ctx):
+    await knowledgetechnology(ctx)
+
+@bot.command()
+async def navigate(ctx):
+    await ctx.send(f'{NAVIGATE}: {D20_BASE}{D20[FUTURED20][EXPANDED_SKILLS][NAVIGATE]}')
+
+@bot.command()
+async def pilot(ctx):
+    await ctx.send(f'{PILOT}: {D20_BASE}{D20[FUTURED20][EXPANDED_SKILLS][PILOT]}')
+
+@bot.command()
+async def futurerepair(ctx):
+    await ctx.send(f'{REPAIR}: {D20_BASE}{D20[FUTURED20][EXPANDED_SKILLS][REPAIR]}')
+
+@bot.command()
+async def repairfuture(ctx):
+    await futurerepair(ctx)
+
+@bot.command()
+async def treatinjury(ctx):
+    await ctx.send(f'{TREAT_INJURY}: {D20_BASE}{D20[FUTURED20][EXPANDED_SKILLS][TREAT_INJURY]}')
 
 bot.run(str(token))
