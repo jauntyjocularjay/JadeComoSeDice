@@ -14,7 +14,7 @@ CYBERNETICS = 'cybernetics'
 ROLES= 'roles'
 AMBASSADOR = 'Ambassador'
 DOGFIGHTER = 'Dogfighter'
-DREADNOUGHT = 'Dreadnought'
+DREADNAUGHT = 'Dreadnaught'
 ENGINEER = 'Engineer'
 EXPLORER = 'Explorer'
 FIELD_OFFICER = 'FieldOfficer'
@@ -48,7 +48,7 @@ D20 = {
         ROLES: {
             AMBASSADOR: '/FutureD20/Classes/Ambassador.md',
             DOGFIGHTER: '/FutureD20/Classes/Dogfighter.md',
-            DREADNOUGHT: '/FutureD20/Classes/Dreadnought.md',
+            DREADNAUGHT: '/FutureD20/Classes/Dreadnought.md',
             ENGINEER: '/FutureD20/Classes/Engineer.md',
             EXPLORER: '/FutureD20/Classes/Explorer.md',
             FIELD_OFFICER: '/FutureD20/Classes/FieldOfficer.md',
