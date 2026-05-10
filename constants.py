@@ -60,7 +60,7 @@ D20 = {
         },
         EXPANDED_SKILLS: {
             README: '/FutureD20/ExpandedSkills.md',
-            BLUFF: '/FutureD20/ExpandedSkills/ExpandedSkills.md#bluff',
+            BLUFF: '/FutureD20/ExpandedSkills/ExpandedSkills.md#bluff-cha',
             COMPUTER_USE: '/FutureD20/ExpandedSkills/ExpandedSkills.md#computer-use-int',
             DISABLE_DEVICE: '/FutureD20/ExpandedSkills/ExpandedSkills.md#disable-device-int',
             KNOWLEDGE_TECHNOLOGY: '/FutureD20/ExpandedSkills/ExpandedSkills.md#knowledge-technology-int',
