@@ -120,7 +120,7 @@ async def knowledgetechnology(ctx):
 
 @bot.command()
 async def knowledgetech(ctx):
-    await knowledgetechnology(ctx)
+    await knowledgetechnology(ctx) 
 
 @bot.command()
 async def techknowledge(ctx):
