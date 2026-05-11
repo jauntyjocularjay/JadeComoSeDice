@@ -9,9 +9,11 @@ W = 'w'
 DSCRD = { 'log': 'discord.log' }
 LOG = 'log'
 
+INDEX = 'index'
+
 CYBERNETICS = 'cybernetics'
 
-ROLES= 'roles'
+CLASSES = 'Classes'
 AMBASSADOR = 'Ambassador'
 DOGFIGHTER = 'Dogfighter'
 DREADNAUGHT = 'Dreadnaught'
@@ -28,11 +30,11 @@ XENOPHILE = 'Xenophile'
 
 ENVIRONMENTS = 'environments'
 
-EXPANDED_SKILLS = 'expanded skills'
+SKILLS = 'Skills'
 BLUFF = 'Bluff'
 COMPUTER_USE = 'Computer Use'
 DISABLE_DEVICE = 'Disable Device'
-KNOWLEDGE_TECHNOLOGY = 'Knowledge (Technology)'
+TECHNOLOGY = 'Technology'
 NAVIGATE = 'Navigate'
 PILOT = 'Pilot'
 REPAIR = 'Repair'
@@ -41,35 +43,37 @@ TREAT_INJURY = 'Treat Injury'
 
 D20 = {
     FUTURED20: {
+            README: f'/{FUTURED20}',
         CYBERNETICS: {
-            README: '/FutureD20/Cybernetics/readme.md'
+            README: f'/{FUTURED20}/Cybernetics.md'
         },
-        ENVIRONMENTS: '/FutureD20/Environments.md',
-        ROLES: {
-            AMBASSADOR: f'/FutureD20/Classes/{AMBASSADOR}.md',
-            DOGFIGHTER: f'/FutureD20/Classes/{DOGFIGHTER}.md',
-            DREADNAUGHT: f'/FutureD20/Classes/{DREADNAUGHT}.md',
-            ENGINEER: f'/FutureD20/Classes/{ENGINEER}.md',
-            EXPLORER: f'/FutureD20/Classes/{EXPLORER}.md',
-            FIELD_OFFICER: f'/FutureD20/Classes/{FIELD_OFFICER}.md',
-            HELIX_WARRIOR: f'/FutureD20/Classes/{HELIX_WARRIOR}.md',
-            MECHA_JOCKEY: f'/FutureD20/Classes/{MECHA_JOCKEY}.md',
-            SPACE_MONKEY: f'/FutureD20/Classes/{SPACE_MONKEY}.md',
-            SWINDLER: f'/FutureD20/Classes/Swindler.md',
-            TECHNOSAVANT: f'/FutureD20/Classes/{TECHNOSAVANT}.md',
-            TRACER: f'/FutureD20/Classes/{TRACER}.md',
-            XENOPHILE: f'/FutureD20/Classes/{XENOPHILE}.md'
+        ENVIRONMENTS: f'/{FUTURED20}/Environments.md',
+        CLASSES: {
+            INDEX: f'/{FUTURED20}/{CLASSES}.md',
+            AMBASSADOR: f'/{FUTURED20}/{CLASSES}/{AMBASSADOR}.md',
+            DOGFIGHTER: f'/{FUTURED20}/{CLASSES}/{DOGFIGHTER}.md',
+            DREADNAUGHT: f'/{FUTURED20}/{CLASSES}/{DREADNAUGHT}.md',
+            ENGINEER: f'/{FUTURED20}/{CLASSES}/{ENGINEER}.md',
+            EXPLORER: f'/{FUTURED20}/{CLASSES}/{EXPLORER}.md',
+            FIELD_OFFICER: f'/{FUTURED20}/{CLASSES}/{FIELD_OFFICER}.md',
+            HELIX_WARRIOR: f'/{FUTURED20}/{CLASSES}/{HELIX_WARRIOR}.md',
+            MECHA_JOCKEY: f'/{FUTURED20}/{CLASSES}/{MECHA_JOCKEY}.md',
+            SPACE_MONKEY: f'/{FUTURED20}/{CLASSES}/{SPACE_MONKEY}.md',
+            SWINDLER: f'/{FUTURED20}/{CLASSES}/Swindler.md',
+            TECHNOSAVANT: f'/{FUTURED20}/{CLASSES}/{TECHNOSAVANT}.md',
+            TRACER: f'/{FUTURED20}/{CLASSES}/{TRACER}.md',
+            XENOPHILE: f'/{FUTURED20}/{CLASSES}/{XENOPHILE}.md'
         },
-        EXPANDED_SKILLS: {
-            README: '/FutureD20/ExpandedSkills.md',
-            BLUFF: '/FutureD20/ExpandedSkills/ExpandedSkills.md#bluff-cha',
-            COMPUTER_USE: '/FutureD20/ExpandedSkills/ExpandedSkills.md#computer-use-int',
-            DISABLE_DEVICE: '/FutureD20/ExpandedSkills/ExpandedSkills.md#disable-device-int',
-            KNOWLEDGE_TECHNOLOGY: '/FutureD20/ExpandedSkills/ExpandedSkills.md#knowledge-technology-int',
-            NAVIGATE: '/FutureD20/ExpandedSkills/ExpandedSkills.md#navigate-int',
-            PILOT: '/FutureD20/ExpandedSkills/ExpandedSkills.md#pilot-dex',
-            REPAIR: '/FutureD20/ExpandedSkills/ExpandedSkills.md#repair-int',
-            TREAT_INJURY: '/FutureD20/ExpandedSkills/ExpandedSkills.md#treat-injury-wis'
+        SKILLS: {
+            INDEX: f'/{FUTURED20}/{SKILLS}.md',
+            BLUFF: f'/{FUTURED20}/{SKILLS}.md#bluff-cha',
+            COMPUTER_USE: f'/{FUTURED20}/{SKILLS}.md#computer-use-int',
+            DISABLE_DEVICE: f'/{FUTURED20}/{SKILLS}.md#disable-device-int',
+            TECHNOLOGY: f'/{FUTURED20}/{SKILLS}.md#knowledge-technology-int',
+            NAVIGATE: f'/{FUTURED20}/{SKILLS}.md#navigate-int',
+            PILOT: f'/{FUTURED20}/{SKILLS}.md#pilot-dex',
+            REPAIR: f'/{FUTURED20}/{SKILLS}.md#repair-int',
+            TREAT_INJURY: f'/{FUTURED20}/{SKILLS}.md#treat-injury-wis'
         }
     }
 }

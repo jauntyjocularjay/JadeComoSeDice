@@ -39,7 +39,7 @@ async def roll(ctx, dice: str):
     try:
         rolls, limit = map(int, dice.split('d'))
     except Exception:
-        await ctx.send('Format has to be in NdN!')
+        await ctx.send('Format has to be in N(umber of)D(ice)N(umber of sides). Written as NDN.')
         return
 
     outcomes = [random.randint(1, limit) for r in range(rolls)]
@@ -59,14 +59,27 @@ async def ROLL(ctx, dice: str):
 @bot.command()
 async def role(ctx, message: str):
     message = message.lower()
-    result = f'I couldn\'t find the role in `{message}`.'
+    result = f'I couldn\'t find the role in `{message}`. Try checking these out: FutureD20 Classes {D20_BASE + D20[FUTURED20][INDEX]}.'
 
-    for x,y in D20[FUTURED20][ROLES].items():
+    for x,y in D20[FUTURED20][CLASSES].items():
         x = x.lower()
         if x in message:
             result = f'Here is the info for the {x} class: {D20_BASE + y}'
             break
 
+    await ctx.send(result)
+
+@bot.command()
+async def skills(ctx, message):
+    message = message.lower()
+    result = f'I couldn\'t find that skill. Check and see if it is in one of these sections: {D20[FUTURED20][SKILLS][INDEX]}'
+    
+    for x,y in D20[FUTURED20][SKILLS].items():
+        x = x.lower()
+        if x in message:
+            result = f'Here is the info for the {x} skill: {D20_BASE + y}'
+            break
+    
     await ctx.send(result)
 
 @bot.command()
@@ -97,25 +110,26 @@ async def augmentations(ctx):
 # async def futureequipment(ctx):
 #     await ctx.send(f'The Expanded Skills Reference: {D20_BASE}{D20[FUTURED20][EQUIPMENT][README]}')
 
+
 @bot.command()
 async def futureskills(ctx):
-    await ctx.send(f'The Expanded Skills Reference: {D20_BASE}{D20[FUTURED20][EXPANDED_SKILLS][README]}')
+    await ctx.send(f'The Expanded Skills Reference: {D20_BASE}{D20[FUTURED20][SKILLS][README]}')
 
 @bot.command()
 async def bluff(ctx):
-    await ctx.send(f'{BLUFF}: {D20_BASE}{D20[FUTURED20][EXPANDED_SKILLS][BLUFF]}')
+    await ctx.send(f'{BLUFF}: {D20_BASE}{D20[FUTURED20][SKILLS][BLUFF]}')
 
 @bot.command()
 async def computeruse(ctx):
-    await ctx.send(f'{COMPUTER_USE}: {D20_BASE}{D20[FUTURED20][EXPANDED_SKILLS][COMPUTER_USE]}')
+    await ctx.send(f'{COMPUTER_USE}: {D20_BASE}{D20[FUTURED20][SKILLS][COMPUTER_USE]}')
 
 @bot.command()
 async def disabledevice(ctx):
-    await ctx.send(f'{DISABLE_DEVICE}: {D20_BASE}{D20[FUTURED20][EXPANDED_SKILLS][DISABLE_DEVICE]}')
+    await ctx.send(f'{DISABLE_DEVICE}: {D20_BASE}{D20[FUTURED20][SKILLS][DISABLE_DEVICE]}')
 
 @bot.command()
 async def knowledgetechnology(ctx):
-    await ctx.send(f'{KNOWLEDGE_TECHNOLOGY}: {D20_BASE}{D20[FUTURED20][EXPANDED_SKILLS][KNOWLEDGE_TECHNOLOGY]}')
+    await ctx.send(f'{TECHNOLOGY}: {D20_BASE}{D20[FUTURED20][SKILLS][TECHNOLOGY]}')
 
 @bot.command()
 async def knowledgetech(ctx):
@@ -127,15 +141,15 @@ async def techknowledge(ctx):
 
 @bot.command()
 async def navigate(ctx):
-    await ctx.send(f'{NAVIGATE}: {D20_BASE}{D20[FUTURED20][EXPANDED_SKILLS][NAVIGATE]}')
+    await ctx.send(f'{NAVIGATE}: {D20_BASE}{D20[FUTURED20][SKILLS][NAVIGATE]}')
 
 @bot.command()
 async def pilot(ctx):
-    await ctx.send(f'{PILOT}: {D20_BASE}{D20[FUTURED20][EXPANDED_SKILLS][PILOT]}')
+    await ctx.send(f'{PILOT}: {D20_BASE}{D20[FUTURED20][SKILLS][PILOT]}')
 
 @bot.command()
 async def futurerepair(ctx):
-    await ctx.send(f'{REPAIR}: {D20_BASE}{D20[FUTURED20][EXPANDED_SKILLS][REPAIR]}')
+    await ctx.send(f'{REPAIR}: {D20_BASE}{D20[FUTURED20][SKILLS][REPAIR]}')
 
 @bot.command()
 async def repairfuture(ctx):
@@ -143,6 +157,6 @@ async def repairfuture(ctx):
 
 @bot.command()
 async def treatinjury(ctx):
-    await ctx.send(f'{TREAT_INJURY}: {D20_BASE}{D20[FUTURED20][EXPANDED_SKILLS][TREAT_INJURY]}')
+    await ctx.send(f'{TREAT_INJURY}: {D20_BASE}{D20[FUTURED20][SKILLS][TREAT_INJURY]}')
 
 bot.run(str(token))
