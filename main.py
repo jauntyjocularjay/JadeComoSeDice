@@ -23,7 +23,6 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix='//', description=description, intents=intents, case_insensitive=True)
 
-
 @bot.event
 async def on_ready():
     # Tell the type checker that User is filled up at this point
@@ -47,7 +46,7 @@ async def roll(ctx, dice: str):
     result = f'{ctx.author.mention} rolled `{limit}d{rolls}` for:\n```{outcomes}```\nand a total of `{total}`'
     await ctx.send(result)
 
-@bot.command(aliases = [])
+@bot.command(aliases = ['class'])
 async def role(ctx, message: str):
     message = message.lower()
     result = f'I couldn\'t find the role in `{message}`. Try checking these out: FutureD20 Classes {D20_BASE + D20[FUTURED20][INDEX]}.'
@@ -55,24 +54,24 @@ async def role(ctx, message: str):
     for x,y in D20[FUTURED20][CLASSES].items():
         x = x.lower()
         if x in message:
-            result = f'Here is the info for the {x} class: {D20_BASE + y}'
+            result = f'Here is the info for the {x} class: {D20_BASE}{y}'
             break
 
     await ctx.send(result)
 
-@bot.command(aliases = [])
+@bot.command(aliases = ['classes'])
 async def roles(ctx):
-    result = f'Future D20 roles: {D20[FUTURED20][CLASSES][README]}'
+    result = f'Future D20 roles: {D20_BASE+D20[FUTURED20][CLASSES][INDEX]}'
     await ctx.send(result)
 
-@bot.command(aliases = ['equipment'])
-async def equip(ctx):
-    result = f'FutureD20 Equipment: {D20[FUTURED20][EQUIPMENT][README]}'
+@bot.command(aliases = ['equip'])
+async def equipment(ctx):
+    result = f'FutureD20 Equipment: {D20[FUTURED20][EQUIPMENT][INDEX]}'
     await ctx.send(result)
 
 @bot.command(aliases = ['augmentations'])
 async def cybernetics(ctx):
-    await ctx.send(f'The Cybernetics Reference: {D20[FUTURED20][CYBERNETICS][README]}')
+    await ctx.send(f'The Cybernetics Reference: {D20[FUTURED20][CYBERNETICS][INDEX]}')
 
 @bot.command(aliases = [''])
 async def skills(ctx):

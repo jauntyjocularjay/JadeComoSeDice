@@ -116,9 +116,9 @@ X_RAY_VISION = 'X-Ray Vision'
 
 D20 = {
     FUTURED20: {
-            README: f'/{FUTURED20}',
+        INDEX: f'/{FUTURED20}',
         CYBERNETICS: {
-            README: f'/{FUTURED20}/Cybernetics.md'
+            INDEX: f'/{FUTURED20}/Cybernetics.md'
         },
         ENVIRONMENTS: f'/{FUTURED20}/Environments.md',
         CLASSES: {
