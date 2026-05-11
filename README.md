@@ -23,6 +23,7 @@ Example:
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements
+touch .env
 echo "DISCORD_TOKEN=your_token_here" > .env
 python main.py
 ```
