@@ -39,7 +39,7 @@ async def roll(ctx, dice: str):
     try:
         rolls, limit = map(int, dice.split('d'))
     except Exception:
-        await ctx.send('Format has to be in NdN!')
+        await ctx.send('Format has to be in N(umber of)D(ice)N(umber of sides). Written as NDN.')
         return
 
     outcomes = [random.randint(1, limit) for r in range(rolls)]
@@ -55,12 +55,12 @@ async def Roll(ctx, dice: str):
 @bot.command()
 async def role(ctx, message: str):
     message = message.lower()
-    result = f'I couldn\'t find the role in `{message}`.'
+    result = f'I couldn\'t find the role in `{message}`. Try checking these out: FutureD20 Classes {D20_BASE + D20[FUTURED20][INDEX]}.'
 
-    for x,y in D20[FUTURED20][ROLES].items():
+    for x,y in D20[FUTURED20][CLASSES].items():
         x = x.lower()
         if x in message:
-            result = f'Here is the info for the {x} class: {y}'
+            result = f'Here is the info for the {x} class: {D20_BASE + y}'
             break
 
     await ctx.send(result)
@@ -116,8 +116,38 @@ async def augmentations(ctx):
     await cybernetics(ctx)
 
 @bot.command()
-async def Augmentations(ctx):
-    await cybernetics(ctx)
+async def skills(ctx):
+    await ctx.send(f'Future: {D20_BASE + D20[FUTURED20][SKILLS][INDEX]} \nModern: \nArcana: \nMenaces:')
+
+@bot.command()
+async def Skills(ctx):
+    await skills(ctx)
+
+@bot.command()
+async def skill(ctx, message):
+    message = message.lower()
+    result = f'I couldn\'t find that skill. Check and see if it is in one of these sections: \nFuture: {D20_BASE + D20[FUTURED20][SKILLS][INDEX]}'
+    
+    for x,y in D20[FUTURED20][SKILLS].items():
+        x = x.lower()
+        if x in message:
+            result = f'Here is the info for the {x} skill: {D20_BASE + y}'
+            break
+    
+    await ctx.send(result)
+
+
+@bot.command()
+async def Skill(ctx, message):
+    await skill(ctx, message)
+
+
+
+# @bot.command()
+# async def equipment(ctx):
+#     await ctx.send(f'The Expanded Skills Reference: {D20_BASE}{D20[FUTURED20][EQUIPMENT][README]}')
+
+
 
 
 bot.run(str(token))
