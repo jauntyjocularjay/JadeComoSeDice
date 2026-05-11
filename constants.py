@@ -11,7 +11,8 @@ LOG = 'log'
 
 INDEX = 'index'
 
-CYBERNETICS = 'cybernetics'
+EQUIPMENT = 'Equipment'
+CYBERNETICS = 'Cybernetics'
 
 CLASSES = 'Classes'
 AMBASSADOR = 'Ambassador'

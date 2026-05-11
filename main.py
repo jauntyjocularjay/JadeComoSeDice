@@ -4,8 +4,7 @@ import random
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
-from constants import DISCORD_TOKEN, UTF8, W, DSCRD, LOG
-from reference import D20, FUTURED20, ROLES, CYBERNETICS, EQUIPMENT, README
+from constants import *
 
 
 
@@ -22,7 +21,7 @@ intents = discord.Intents.default()
 intents.members = True
 intents.message_content = True
 
-bot = commands.Bot(command_prefix='//', description=description, intents=intents)
+bot = commands.Bot(command_prefix='//', description=description, intents=intents, case_insensitive=True)
 
 
 @bot.event
@@ -33,7 +32,7 @@ async def on_ready():
     print(f'Logged in as {bot.user} (ID: {bot.user.id})')
     print('------')
 
-@bot.command()
+@bot.command(aliases = ['r'])
 async def roll(ctx, dice: str):
     """Rolls a dice in NdN format."""
     try:
@@ -48,11 +47,7 @@ async def roll(ctx, dice: str):
     result = f'{ctx.author.mention} rolled `{limit}d{rolls}` for:\n```{outcomes}```\nand a total of `{total}`'
     await ctx.send(result)
 
-@bot.command()
-async def Roll(ctx, dice: str):
-    await roll(ctx, dice)
-
-@bot.command()
+@bot.command(aliases = [])
 async def role(ctx, message: str):
     message = message.lower()
     result = f'I couldn\'t find the role in `{message}`. Try checking these out: FutureD20 Classes {D20_BASE + D20[FUTURED20][INDEX]}.'
@@ -65,65 +60,25 @@ async def role(ctx, message: str):
 
     await ctx.send(result)
 
-@bot.command()
-async def Role(ctx, message: str):
-    await role(ctx, message)
-
-@bot.command()
+@bot.command(aliases = [])
 async def roles(ctx):
-    result = f'Future D20 roles: {D20[FUTURED20][ROLES][README]}'
+    result = f'Future D20 roles: {D20[FUTURED20][CLASSES][README]}'
     await ctx.send(result)
 
-@bot.command()
-async def Roles(ctx):
-    await roles(ctx)
-
-@bot.command()
+@bot.command(aliases = ['equipment'])
 async def equip(ctx):
     result = f'FutureD20 Equipment: {D20[FUTURED20][EQUIPMENT][README]}'
     await ctx.send(result)
 
-@bot.command()
-async def Equip(ctx):
-    await equip(ctx)
-
-@bot.command()
-async def equipment(ctx):
-    await equip(ctx)
-
-@bot.command()
-async def Equipment(ctx):
-    await equip(ctx)
-
-@bot.command()
+@bot.command(aliases = ['augmentations'])
 async def cybernetics(ctx):
     await ctx.send(f'The Cybernetics Reference: {D20[FUTURED20][CYBERNETICS][README]}')
 
-@bot.command()
-async def Cybernetics(ctx):
-    await cybernetics(ctx)
-
-@bot.command()
-async def augmentation(ctx):
-    await cybernetics(ctx)
-
-@bot.command()
-async def Augmentation(ctx):
-    await cybernetics(ctx)
-
-@bot.command()
-async def augmentations(ctx):
-    await cybernetics(ctx)
-
-@bot.command()
+@bot.command(aliases = [''])
 async def skills(ctx):
     await ctx.send(f'Future: {D20_BASE + D20[FUTURED20][SKILLS][INDEX]} \nModern: \nArcana: \nMenaces:')
 
-@bot.command()
-async def Skills(ctx):
-    await skills(ctx)
-
-@bot.command()
+@bot.command(aliases = [])
 async def skill(ctx, message):
     message = message.lower()
     result = f'I couldn\'t find that skill. Check and see if it is in one of these sections: \nFuture: {D20_BASE + D20[FUTURED20][SKILLS][INDEX]}'
@@ -135,19 +90,5 @@ async def skill(ctx, message):
             break
     
     await ctx.send(result)
-
-
-@bot.command()
-async def Skill(ctx, message):
-    await skill(ctx, message)
-
-
-
-# @bot.command()
-# async def equipment(ctx):
-#     await ctx.send(f'The Expanded Skills Reference: {D20_BASE}{D20[FUTURED20][EQUIPMENT][README]}')
-
-
-
 
 bot.run(str(token))
