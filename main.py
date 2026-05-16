@@ -49,7 +49,7 @@ async def roll(ctx, dice: str):
 @bot.command(aliases = ['class'])
 async def role(ctx, message: str):
     message = message.lower()
-    result = f'I couldn\'t find the role in `{message}`. Try checking these out: FutureD20 Classes {D20_BASE + D20[FUTURED20][INDEX]}.'
+    result = f'I couldn\'t find the class in `{message}`. Try checking these out: FutureD20 Classes {D20_BASE + D20[FUTURED20][INDEX]}.'
 
     for x,y in D20[FUTURED20][CLASSES].items():
         x = x.lower()
@@ -71,18 +71,18 @@ async def equipment(ctx):
 
 @bot.command(aliases = ['augmentations'])
 async def cybernetics(ctx):
-    await ctx.send(f'The Cybernetics Reference: {D20[FUTURED20][CYBERNETICS][INDEX]}')
+    await ctx.send(f'Take a look at Cybernetics Reference: \n{D20_BASE}{D20[FUTURED20][CYBERNETICS][INDEX]}')
 
 @bot.command(aliases = [''])
 async def skills(ctx):
-    await ctx.send(f'Future: {D20_BASE + D20[FUTURED20][SKILLS][INDEX]} \nModern: \nArcana: \nMenaces:')
+    await ctx.send(D20_BASE + D20[SKILLS][INDEX])
 
 @bot.command(aliases = [])
 async def skill(ctx, message):
     message = message.lower()
     result = f'I couldn\'t find that skill. Check and see if it is in one of these sections: \nFuture: {D20_BASE + D20[FUTURED20][SKILLS][INDEX]}'
     
-    for x,y in D20[FUTURED20][SKILLS].items():
+    for x,y in D20[SKILLS].items():
         x = x.lower()
         if x in message:
             result = f'Here is the info for the {x} skill: {D20_BASE + y}'

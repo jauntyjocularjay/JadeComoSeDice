@@ -12,7 +12,10 @@ LOG = 'log'
 INDEX = 'index'
 
 EQUIPMENT = 'Equipment'
+
 CYBERNETICS = 'Cybernetics'
+
+RACES = 'Races'
 
 CLASSES = 'Classes'
 AMBASSADOR = 'Ambassador'
@@ -32,14 +35,55 @@ XENOPHILE = 'Xenophile'
 ENVIRONMENTS = 'environments'
 
 SKILLS = 'Skills'
+BALANCE = 'Balance'
 BLUFF = 'Bluff'
+CLIMB = 'Climb'
+CONCENTRATION = 'Concentration'
+CRAFT = 'Craft'
+CRAFT_CHEMICAL = 'Craft Chemical'
+CRAFT_ELECTRONIC = 'Craft Electronic'
+CRAFT_MECHANICAL = 'Craft Mechanical'
+CRAFT_PHARMACEUTICAL = 'Craft Pharmaceutical'
+CRAFT_STRUCTURAL = 'Craft Structural'
+CRAFT_VISUAL_ART = 'Craft Visual Art'
+CRAFT_WRITING = 'Craft Writing'
 COMPUTER_USE = 'Computer Use'
+DECIPHER_SCRIPT = 'Decipher Script'
+DEMOLITIONS = 'Demolitions'
+DIPLOMACY = 'Diplomacy'
 DISABLE_DEVICE = 'Disable Device'
-TECHNOLOGY = 'Technology'
+DISGUISE = 'Disguise'
+DRIVE = 'Drive'
+ESCAPE_ARTIST = 'Escape Artist'
+FORGERY = 'Forgery'
+GAMBLE = 'Gamble'
+GATHER_INFORMATION = 'Gather Information'
+HANDLE_ANIMAL = 'Handle Animal'
+HIDE = 'Hide'
+INTIMIDATE = 'Intimidate'
+INVESTIGATE = 'Investigate'
+JUMP = 'Jump'
+LISTEN = 'Listen'
+MOVE_SILENTLY = 'Move Silently'
+TECHNOLOGY = 'Knowledge Technology'
 NAVIGATE = 'Navigate'
+PERFORM = 'Perform'
 PILOT = 'Pilot'
+PROFESSION = 'Profession'
+READ_WRITE_LANGUAGE = 'Read/Write Language'
 REPAIR = 'Repair'
+RESEARCH = 'Research'
+RIDE = 'Ride'
+SEARCH = 'Search'
+SENSE_MOTIVE = 'Sense Motive'
+SLEIGHT_OF_HAND = 'Sleight of Hand'
+SPEAK_LANGUAGE = 'Speak Language'
+SPOT = 'Spot'
+SURVIVAL = 'Survival'
+SWIM = 'Swim'
 TREAT_INJURY = 'Treat Injury'
+TUMBLE = 'Tumble'
+
 
 MUTATIONS = 'Mutations'
 ABILITY_DECAY = 'Ability Decay'
@@ -113,12 +157,105 @@ WEBBED_DIGITS = 'Webbed Digits'
 WINGS = 'Wings'
 X_RAY_VISION = 'X-Ray Vision'
 
+AVP = 'AliensVPredator'
+YAUTJA = 'Yautja'
+ENGINEERS = 'Engineers'
 
 D20 = {
+    SKILLS: {
+        INDEX: f'/{SKILLS}.md',
+        BALANCE: f'/{SKILLS}.md#balance',
+        BLUFF: f'/{SKILLS}.md#bluff',
+        CLIMB: f'/{SKILLS}.md#climb',
+        CONCENTRATION: f'/{SKILLS}.md#concentration',
+        CRAFT: f'/{SKILLS}.md#craft',
+        CRAFT_CHEMICAL: f'/{SKILLS}.md#craft-chemical',
+        CRAFT_ELECTRONIC: f'/{SKILLS}.md#craft-electronic',
+        CRAFT_MECHANICAL: f'/{SKILLS}.md#craft-mechanical',
+        CRAFT_PHARMACEUTICAL: f'/{SKILLS}.md#craft-pharmaceutical',
+        CRAFT_STRUCTURAL: f'/{SKILLS}.md#craft-structural',
+        CRAFT_VISUAL_ART: f'/{SKILLS}.md#craft-visual-art',
+        CRAFT_WRITING: f'/{SKILLS}.md#craft-writing',
+        COMPUTER_USE: f'/{SKILLS}.md#computer-use',
+        DECIPHER_SCRIPT: f'/{SKILLS}.md#decipher-script',
+        DEMOLITIONS: f'/{SKILLS}.md#demolitions',
+        DIPLOMACY: f'/{SKILLS}.md#diplomacy',
+        DISABLE_DEVICE: f'/{SKILLS}.md#disable-device',
+        DISGUISE: f'/{SKILLS}.md#disguise',
+        DRIVE: f'/{SKILLS}.md#drive',
+        ESCAPE_ARTIST: f'/{SKILLS}.md#escape-artist',
+        FORGERY: f'/{SKILLS}.md#forgery',
+        GAMBLE: f'/{SKILLS}.md#gamble',
+        GATHER_INFORMATION: f'/{SKILLS}.md#gather-information',
+        HANDLE_ANIMAL: f'/{SKILLS}.md#handle-animal',
+        HIDE: f'/{SKILLS}.md#hide',
+        INTIMIDATE: f'/{SKILLS}.md#intimidate',
+        INVESTIGATE: f'/{SKILLS}.md#investigate',
+        JUMP: f'/{SKILLS}.md#jump',
+        LISTEN: f'/{SKILLS}.md#listen',
+        MOVE_SILENTLY: f'/{SKILLS}.md#move-silently',
+        TECHNOLOGY: f'/{SKILLS}.md#technology',
+        NAVIGATE: f'/{SKILLS}.md#navigate',
+        PERFORM: f'/{SKILLS}.md#perform',
+        PILOT: f'/{SKILLS}.md#pilot',
+        PROFESSION: f'/{SKILLS}.md#profession',
+        READ_WRITE_LANGUAGE: f'/{SKILLS}.md#readwrite-language',
+        REPAIR: f'/{SKILLS}.md#repair',
+        RESEARCH: f'/{SKILLS}.md#research',
+        RIDE: f'/{SKILLS}.md#ride',
+        SEARCH: f'/{SKILLS}.md#search',
+        SENSE_MOTIVE: f'/{SKILLS}.md#sense-motive',
+        SLEIGHT_OF_HAND: f'/{SKILLS}.md#sleight-of-hand',
+        SPEAK_LANGUAGE: f'/{SKILLS}.md#speak-language',
+        SPOT: f'/{SKILLS}.md#spot',
+        SURVIVAL: f'/{SKILLS}.md#survival',
+        SWIM: f'/{SKILLS}.md#swim',
+        TREAT_INJURY: f'/{SKILLS}.md#treat-injury',
+        TUMBLE: f'/{SKILLS}.md#tumble',
+    },
     FUTURED20: {
         INDEX: f'/{FUTURED20}',
         CYBERNETICS: {
-            INDEX: f'/{FUTURED20}/Cybernetics.md'
+            INDEX: f'/{FUTURED20}/{CYBERNETICS}.md',
+            ARTIFICIAL_ORGAN: f'',
+            PROSTHETIC_ARM: f'',
+            PROSTHETIC_LEG: f'',
+            ARTIFICIAL_ORGAN_UPGRADE: f'',
+            PROSTHETIC_ARM_UPGRADE: f'',
+            PROSTHETIC_LEG_UPGRADE: f'',
+            ADVANCED_ARTIFICIAL_ORGAN: f'',
+            ADVANCED_PROSTHETIC_ARM: f'',
+            ADVANCED_PROSTHETIC_LEG: f'',
+            ANTI_SHOCK_IMPLANT: f'',
+            EXTERNAL_WEAPON_MOUNT: f'',
+            IDENTITY_CHIP: f'',
+            INJECTOR_UNIT: f'',
+            NIGHTVISION_OPTICS: f'',
+            SKILL_IMPLANT: f'',
+            STABILIZER: f'',
+            SUBCUTANEOUS_BODY_ARMOR: f'',
+            SUBCUTANEOUS_CELL_PHONE: f'',
+            TELESCOPIC_OPTICS: f'',
+            VOICE_STRESS_ANALYZER: f'',
+            ANTI_FLARE_IMPLANTS: f'',
+            ANTI_STUN_IMPLANT: f'',
+            BODY_REPAIR_WEAVE: f'',
+            DATA_ARCHIVE: f'',
+            FEAT_IMPLANT: f'',
+            FORTIFIED_SKELETON: f'',
+            INITIATIVE_IMPLANT: f'',
+            INTERNAL_WEAPON_MOUNT: f'',
+            LASER_OPTICS: f'',
+            LUMINOUS_SKIN: f'',
+            MICROCOMPUTER: f'',
+            MINDSCREEN_IMPLANT: f'',
+            PROSTHETIC_ENHANCER: f'',
+            RAGE_IMPLANT: f'',
+            SKILL_PLEXUS: f'',
+            TARGETING_OPTICS: f'',
+            FEAT_PLEXUS: f'',
+            INVISIWARE: f'',
+            PSI_IMPLANT: f''
         },
         ENVIRONMENTS: f'/{FUTURED20}/Environments.md',
         CLASSES: {
@@ -136,17 +273,6 @@ D20 = {
             TECHNOSAVANT: f'/{FUTURED20}/{CLASSES}/{TECHNOSAVANT}.md',
             TRACER: f'/{FUTURED20}/{CLASSES}/{TRACER}.md',
             XENOPHILE: f'/{FUTURED20}/{CLASSES}/{XENOPHILE}.md'
-        },
-        SKILLS: {
-            INDEX: f'/{FUTURED20}/{SKILLS}.md',
-            BLUFF: f'/{FUTURED20}/{SKILLS}.md#bluff-cha',
-            COMPUTER_USE: f'/{FUTURED20}/{SKILLS}.md#computer-use-int',
-            DISABLE_DEVICE: f'/{FUTURED20}/{SKILLS}.md#disable-device-int',
-            TECHNOLOGY: f'/{FUTURED20}/{SKILLS}.md#knowledge-technology-int',
-            NAVIGATE: f'/{FUTURED20}/{SKILLS}.md#navigate-int',
-            PILOT: f'/{FUTURED20}/{SKILLS}.md#pilot-dex',
-            REPAIR: f'/{FUTURED20}/{SKILLS}.md#repair-int',
-            TREAT_INJURY: f'/{FUTURED20}/{SKILLS}.md#treat-injury-wis'
         },
         MUTATIONS: {
             INDEX: f'/{FUTURED20}/{MUTATIONS}.md',
@@ -220,6 +346,13 @@ D20 = {
             WEBBED_DIGITS: f'/{FUTURED20}/{MUTATIONS}.md#webbed-digits-minor',
             WINGS: f'/{FUTURED20}/{MUTATIONS}.md#wings-major',
             X_RAY_VISION: f'/{FUTURED20}/{MUTATIONS}.md#x-ray-vision-major'
+        },
+    AVP: {
+        RACES:{
+            YAUTJA: f'/{AVP}/{RACES}/{YAUTJA}.md',
+            ENGINEERS: f'/{AVP}/{RACES}/{ENGINEERS}.md'
         }
     }
+    }
+    
 }
