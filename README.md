@@ -1,14 +1,15 @@
 # Jade's D20 Reference Bot
 
-A Discord bot that links to FutureD20 rules content and includes a simple dice roller.
+Discord bot for quick Future D20 reference links plus a dice roller.
 
-## Current Implementation
+## Current Functionality
 
 - Language: Python 3
-- Framework: `discord.py`
-- Prefix: `//`
-- Token source: environment variable `DISCORD_TOKEN`
-- Log file: `discord.log` (overwritten each run)
+- Framework: discord.py commands extension
+- Prefix: //
+- Case-insensitive commands: enabled
+- Token source: DISCORD_TOKEN environment variable (dotenv supported)
+- Log file: discord.log
 
 ## Setup
 
@@ -25,7 +26,7 @@ source venv/bin/activate
 pip install -r requirements
 touch .env
 echo "DISCORD_TOKEN=your_token_here" > .env
-python main.py
+python -m main
 ```
 
 ## Commands
@@ -39,45 +40,53 @@ All commands use the `//` prefix.
 - Example: `//roll 2d6`
 - Input must be in `NdN` format.
 
-### FutureD20 Class Lookup
+### role
 
-- `//role <text>`
-- Aliases: `//Role`, `//roles <text>`, `//Roles <text>`
-- Matches if a class name is contained inside `<text>` (case-insensitive).
-- Returns the class markdown link from the FutureD20 Classes section.
-- If no match is found, returns a fallback link to the classes index.
+- Syntax: `//role [text]`
+- Alias: `//class`
+- Performs case-insensitive substring matching across mapped Future D20 classes.
+- Returns the first matching class anchor in Classes.md.
+- If no class matches, returns the Future D20 classes index link.
 
-#### Currently Mapped FutureD20 Classes
+### roles
 
-Ambassador, Dogfighter, Dreadnaught, Engineer, Explorer, FieldOfficer, HelixWarrior, MechaJockey, SpaceMonkey, Swindler, Technosavant, Tracer, Xenophile
+- Syntax: `//roles`
+- Alias: `//classes`
+- Returns the Future D20 classes index link.
 
-### Cybernetics Reference
+### equipment
 
-- `//cybernetics`
-- Aliases: `//augmentation`, `//augmentations`
-- Returns the FutureD20 cybernetics reference link.
+- Syntax: `//equipment`
+- Alias: `//equip`
+- Returns the Future D20 equipment link.
 
-### Skills Index
+### cybernetics
+
+- Syntax: `//cybernetics`
+- Aliases: `//augmentations`, `//augmentation`, `//cybernetic`
+- Returns the Future D20 cybernetics link.
+
+### skills
 
 - `//skills`
 - Alias: `//Skills`
-- Future skills index link
+- provides the Future skills index link
 - Placeholder labels for Modern, Arcana, and Menaces (no links yet)
 
 ### Specific Skill Lookup
 
-- `//skill <text>`
-- Alias: `//Skill <text>`
-- Matches known FutureD20 skills by substring (case-insensitive).
-- Returns a deep link to the skill anchor in `FutureD20/Skills.md`.
-- If no match is found, returns a fallback link to the Future skills index.
+- Syntax: `//skill [text]`
+- Performs case-insensitive substring matching across mapped skills.
+- Returns the first matching skill anchor.
+- If no skill matches, returns a fallback Skills section link.
 
-#### Currently Mapped FutureD20 Skills
+## Link Mapping Scope
 
-Bluff, Computer Use, Disable Device, Technology, Navigate, Pilot, Repair, Treat Injury
+- Future D20 classes: mapped to Classes.md anchors.
+- Future D20 mutations: mapped to Mutations.md anchors in constants.
+- Skills: mapped to Skills.md anchors.
 
 ## Notes
 
-- The command aliases are implemented as separate commands in code.
-- The `roles` and `Roles` aliases currently require an argument, same as `role`.
-- Only FutureD20 links are currently implemented in bot responses.
+- Link strings are composed from constants.py and may include extra slash characters depending on stored path fragments.
+- Matching behavior is substring-based, so shorter inputs can match multiple keys and return the first hit.

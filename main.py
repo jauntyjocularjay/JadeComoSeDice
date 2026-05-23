@@ -49,43 +49,52 @@ async def roll(ctx, dice: str):
 @bot.command(aliases = ['class'])
 async def role(ctx, message: str):
     message = message.lower()
-    result = f'I couldn\'t find the class in `{message}`. Try checking these out: FutureD20 Classes {D20_BASE + D20[FUTURED20][INDEX]}.'
+    
+    link = f'{D20_BASE}/{FUTURE}/{D20[FUTURE][INDEX]}'
 
-    for x,y in D20[FUTURED20][CLASSES].items():
+    result = f'I couldn\'t find the class in `{message}`. Try checking these out: FutureD20 Classes {link}.'
+
+    for x,y in D20[FUTURE][CLASSES].items():
         x = x.lower()
         if x in message:
-            result = f'Here is the info for the {x} class: {D20_BASE}{y}'
+            result = f'Here is the info for the {x} class: {link}{y}'
             break
 
     await ctx.send(result)
 
 @bot.command(aliases = ['classes'])
 async def roles(ctx):
-    result = f'Future D20 roles: {D20_BASE+D20[FUTURED20][CLASSES][INDEX]}'
+    result = f'Future D20 classes: {D20_BASE}/{FUTURE}/{D20[FUTURE][CLASSES][INDEX]}'
     await ctx.send(result)
 
 @bot.command(aliases = ['equip'])
 async def equipment(ctx):
-    result = f'FutureD20 Equipment: {D20[FUTURED20][EQUIPMENT][INDEX]}'
+    result = f'FutureD20 Equipment: {D20_BASE}/{FUTURE}/{D20[FUTURE][EQUIPMENT]}'
     await ctx.send(result)
 
-@bot.command(aliases = ['augmentations'])
+@bot.command(aliases = ['augmentations', 'augmentation', 'cybernetic'])
 async def cybernetics(ctx):
-    await ctx.send(f'Take a look at Cybernetics Reference: \n{D20_BASE}{D20[FUTURED20][CYBERNETICS][INDEX]}')
+    await ctx.send(f'Take a look at Cybernetics Reference: \n{D20_BASE}/{FUTURE}/{D20[FUTURE][CYBERNETICS][INDEX]}')
 
-@bot.command(aliases = [''])
+@bot.command()
 async def skills(ctx):
-    await ctx.send(D20_BASE + D20[SKILLS][INDEX])
+    
+    link = D20_BASE + D20[SKILLS][INDEX]
+    
+    await ctx.send(f'Here is the skill reference:\n{link}')
 
-@bot.command(aliases = [])
+@bot.command()
 async def skill(ctx, message):
     message = message.lower()
-    result = f'I couldn\'t find that skill. Check and see if it is in one of these sections: \nFuture: {D20_BASE + D20[FUTURED20][SKILLS][INDEX]}'
-    
+
+    link = f'{D20_BASE}/{SKILLS}'
+
+    result = f'I couldn\'t find that skill. Check and see if it is in one of these sections: {link}'
+
     for x,y in D20[SKILLS].items():
         x = x.lower()
         if x in message:
-            result = f'Here is the info for the {x} skill: {D20_BASE + y}'
+            result = f'Here is the info for the {x} skill: {link + y}'
             break
     
     await ctx.send(result)

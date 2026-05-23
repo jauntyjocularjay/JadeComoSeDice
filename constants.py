@@ -2,7 +2,7 @@
 D20_BASE = 'https://github.com/jauntyjocularjay/D20Resources/tree/master'
 README = 'readme'
 LINK = 'link'
-FUTURED20 = 'FutureD20'
+FUTURE = 'FutureD20'
 DISCORD_TOKEN = 'DISCORD_TOKEN'
 UTF8 = 'utf-8'
 W = 'w'
@@ -40,122 +40,122 @@ BLUFF = 'Bluff'
 CLIMB = 'Climb'
 CONCENTRATION = 'Concentration'
 CRAFT = 'Craft'
-CRAFT_CHEMICAL = 'Craft Chemical'
-CRAFT_ELECTRONIC = 'Craft Electronic'
-CRAFT_MECHANICAL = 'Craft Mechanical'
-CRAFT_PHARMACEUTICAL = 'Craft Pharmaceutical'
-CRAFT_STRUCTURAL = 'Craft Structural'
-CRAFT_VISUAL_ART = 'Craft Visual Art'
-CRAFT_WRITING = 'Craft Writing'
-COMPUTER_USE = 'Computer Use'
-DECIPHER_SCRIPT = 'Decipher Script'
+CRAFT_CHEMICAL = 'Craft-Chemical'
+CRAFT_ELECTRONIC = 'Craft-Electronic'
+CRAFT_MECHANICAL = 'Craft-Mechanical'
+CRAFT_PHARMACEUTICAL = 'Craft-Pharmaceutical'
+CRAFT_STRUCTURAL = 'Craft-Structural'
+CRAFT_VISUAL_ART = 'Craft-Visual-Art'
+CRAFT_WRITING = 'Craft-Writing'
+COMPUTER_USE = 'Computer-Use'
+DECIPHER_SCRIPT = 'Decipher-Script'
 DEMOLITIONS = 'Demolitions'
 DIPLOMACY = 'Diplomacy'
-DISABLE_DEVICE = 'Disable Device'
+DISABLE_DEVICE = 'Disable-Device'
 DISGUISE = 'Disguise'
 DRIVE = 'Drive'
-ESCAPE_ARTIST = 'Escape Artist'
+ESCAPE_ARTIST = 'Escape-Artist'
 FORGERY = 'Forgery'
 GAMBLE = 'Gamble'
-GATHER_INFORMATION = 'Gather Information'
-HANDLE_ANIMAL = 'Handle Animal'
+GATHER_INFORMATION = 'Gather-Information'
+HANDLE_ANIMAL = 'Handle-Animal'
 HIDE = 'Hide'
 INTIMIDATE = 'Intimidate'
 INVESTIGATE = 'Investigate'
 JUMP = 'Jump'
 LISTEN = 'Listen'
-MOVE_SILENTLY = 'Move Silently'
-TECHNOLOGY = 'Knowledge Technology'
+MOVE_SILENTLY = 'Move-Silently'
+TECHNOLOGY = 'Technology'
 NAVIGATE = 'Navigate'
 PERFORM = 'Perform'
 PILOT = 'Pilot'
 PROFESSION = 'Profession'
-READ_WRITE_LANGUAGE = 'Read/Write Language'
+READ_WRITE_LANGUAGE = 'ReadWrite-Language'
 REPAIR = 'Repair'
 RESEARCH = 'Research'
 RIDE = 'Ride'
 SEARCH = 'Search'
-SENSE_MOTIVE = 'Sense Motive'
-SLEIGHT_OF_HAND = 'Sleight of Hand'
-SPEAK_LANGUAGE = 'Speak Language'
+SENSE_MOTIVE = 'Sense-Motive'
+SLEIGHT_OF_HAND = 'Sleight-of-Hand'
+SPEAK_LANGUAGE = 'Speak-Language'
 SPOT = 'Spot'
 SURVIVAL = 'Survival'
 SWIM = 'Swim'
-TREAT_INJURY = 'Treat Injury'
+TREAT_INJURY = 'Treat-Injury'
 TUMBLE = 'Tumble'
 
 
 MUTATIONS = 'Mutations'
-ABILITY_DECAY = 'Ability Decay'
-ACIDIC_SALIVA = 'Acidic Saliva'
-ADRENALINE_JOLT = 'Adrenaline Jolt'
-BLOOD_HUNGER = 'Blood Hunger'
-BRITTLE_BONES = 'Brittle Bones'
+ABILITY_DECAY = 'Ability-Decay'
+ACIDIC_SALIVA = 'Acidic-Saliva'
+ADRENALINE_JOLT = 'Adrenaline-Jolt'
+BLOOD_HUNGER = 'Blood-Hunger'
+BRITTLE_BONES = 'Brittle-Bones'
 CLAWS = 'Claws'
-COMBAT_FEAR = 'Combat Fear'
-CYBERNETIC_DEPENDENCY = 'Cybernetic Dependency'
+COMBAT_FEAR = 'Combat-Fear'
+CYBERNETIC_DEPENDENCY = 'Cybernetic-Dependency'
 DARKVISION = 'Darkvision'
 ECHOLOCATOR = 'Echolocator'
 ELASTICITY = 'Elasticity'
-ENERGY_ABSORPTION = 'Energy Absorption'
-ENERGY_DIFFUSION = 'Energy Diffusion'
-ENLARGED_FORM = 'Enlarged Form'
+ENERGY_ABSORPTION = 'Energy-Absorption'
+ENERGY_DIFFUSION = 'Energy-Diffusion'
+ENLARGED_FORM = 'Enlarged-Form'
 EXOSKELETON = 'Exoskeleton'
-EXTRA_ARMS = 'Extra Arms'
-EXTRA_DIGITS = 'Extra Digits'
+EXTRA_ARMS = 'Extra-Arms'
+EXTRA_DIGITS = 'Extra-Digits'
 FANGS = 'Fangs'
-FESTERING_SORES = 'Festering Sores'
+FESTERING_SORES = 'Festering-Sores'
 FINS = 'Fins'
-FORCE_BARRIER = 'Force Barrier'
-FORKED_TONGUE = 'Forked Tongue'
+FORCE_BARRIER = 'Force-Barrier'
+FORKED_TONGUE = 'Forked-Tongue'
 FRAILTY = 'Frailty'
-GAZING_EYE = 'Gazing Eye'
+GAZING_EYE = 'Gazing-Eye'
 GILLS = 'Gills'
-GREAT_HORNS = 'Great Horns'
-HEAT_COLD_SUSCEPTIBILITY = 'Heat/Cold Susceptibility'
+GREAT_HORNS = 'Great-Horns'
+HEAT_COLD_SUSCEPTIBILITY = 'Heat/Cold-Susceptibility'
 HORNS = 'Horns'
 HYPERSENSITIVITY = 'Hypersensitivity'
 LEAPER = 'Leaper'
 LETHARGY = 'Lethargy'
-LIGHT_SENSITIVITY = 'Light Sensitivity'
-LOST_ARM = 'Lost Arm'
+LIGHT_SENSITIVITY = 'Light-Sensitivity'
+LOST_ARM = 'Lost-Arm'
 MINDSLAVE = 'Mindslave'
-NEUTRAD_DEPENDENCY = 'Neutrad Dependency'
-PHEROMONE_ATTRACTION = 'Pheromone Attraction'
-PHEROMONE_REPULSION = 'Pheromone Repulsion'
-POISONOUS_BLOOD = 'Poisonous Blood'
-PREHENSILE_TAIL = 'Prehensile Tail'
-PRICKLY_PEAR = 'Prickly Pear'
+NEUTRAD_DEPENDENCY = 'Neutrad-Dependency'
+PHEROMONE_ATTRACTION = 'Pheromone-Attraction'
+PHEROMONE_REPULSION = 'Pheromone-Repulsion'
+POISONOUS_BLOOD = 'Poisonous-Blood'
+PREHENSILE_TAIL = 'Prehensile-Tail'
+PRICKLY_PEAR = 'Prickly-Pear'
 RADIOACTIVE = 'Radioactive'
-RAPID_AGING = 'Rapid Aging'
-REDUCED_SPEED = 'Reduced Speed'
-SCALY_ARMOR = 'Scaly Armor'
-SCALY_SKIN = 'Scaly Skin'
+RAPID_AGING = 'Rapid-Aging'
+REDUCED_SPEED = 'Reduced-Speed'
+SCALY_ARMOR = 'Scaly-Armor'
+SCALY_SKIN = 'Scaly-Skin'
 SCENT = 'Scent'
-SECOND_WIND = 'Second Wind'
-SKELETAL_REINFORCEMENT = 'Skeletal Reinforcement'
+SECOND_WIND = 'Second-Wind'
+SKELETAL_REINFORCEMENT = 'Skeletal-Reinforcement'
 SMOKESCREEN = 'Smokescreen'
 STINGER = 'Stinger'
 TAIL = 'Tail'
-TELEKINETIC_MIND = 'Telekinetic Mind'
+TELEKINETIC_MIND = 'Telekinetic-Mind'
 TELEPATHY = 'Telepathy'
 TENTACLE = 'Tentacle'
-THICK_FUR_COAT = 'Thick Fur Coat'
-THIN_FUR_COAT = 'Thin Fur Coat'
-THIN_SKIN = 'Thin Skin'
-ULTRA_IMMUNE_SYSTEM = 'Ultra Immune System'
-ULTRAVIOLET_ALLERGY = 'Ultraviolet Allergy'
-UNNATURAL_EYES = 'Unnatural Eyes'
-UNNATURAL_HAIR = 'Unnatural Hair'
-UNNATURAL_SKIN = 'Unnatural Skin'
-UNNATURAL_VOICE = 'Unnatural Voice'
-VENOMOUS_BITE = 'Venomous Bite'
-VEXING_VOICE = 'Vexing Voice'
-WALL_CRAWLER = 'Wall Crawler'
-WEAK_IMMUNE_SYSTEM = 'Weak Immune System'
-WEBBED_DIGITS = 'Webbed Digits'
+THICK_FUR_COAT = 'Thick-Fur-Coat'
+THIN_FUR_COAT = 'Thin-Fur-Coat'
+THIN_SKIN = 'Thin-Skin'
+ULTRA_IMMUNE_SYSTEM = 'Ultra-Immune-System'
+ULTRAVIOLET_ALLERGY = 'Ultraviolet-Allergy'
+UNNATURAL_EYES = 'Unnatural-Eyes'
+UNNATURAL_HAIR = 'Unnatural-Hair'
+UNNATURAL_SKIN = 'Unnatural-Skin'
+UNNATURAL_VOICE = 'Unnatural-Voice'
+VENOMOUS_BITE = 'Venomous-Bite'
+VEXING_VOICE = 'Vexing-Voice'
+WALL_CRAWLER = 'Wall-Crawler'
+WEAK_IMMUNE_SYSTEM = 'Weak-Immune-System'
+WEBBED_DIGITS = 'Webbed-Digits'
 WINGS = 'Wings'
-X_RAY_VISION = 'X-Ray Vision'
+X_RAY_VISION = 'X-Ray-Vision'
 
 AVP = 'AliensVPredator'
 YAUTJA = 'Yautja'
@@ -163,150 +163,151 @@ ENGINEERS = 'Engineers'
 
 D20 = {
     SKILLS: {
-        INDEX: f'/{SKILLS}.md',
-        BALANCE: f'/{SKILLS}.md#balance',
-        BLUFF: f'/{SKILLS}.md#bluff',
-        CLIMB: f'/{SKILLS}.md#climb',
-        CONCENTRATION: f'/{SKILLS}.md#concentration',
-        CRAFT: f'/{SKILLS}.md#craft',
-        CRAFT_CHEMICAL: f'/{SKILLS}.md#craft-chemical',
-        CRAFT_ELECTRONIC: f'/{SKILLS}.md#craft-electronic',
-        CRAFT_MECHANICAL: f'/{SKILLS}.md#craft-mechanical',
-        CRAFT_PHARMACEUTICAL: f'/{SKILLS}.md#craft-pharmaceutical',
-        CRAFT_STRUCTURAL: f'/{SKILLS}.md#craft-structural',
-        CRAFT_VISUAL_ART: f'/{SKILLS}.md#craft-visual-art',
-        CRAFT_WRITING: f'/{SKILLS}.md#craft-writing',
-        COMPUTER_USE: f'/{SKILLS}.md#computer-use',
-        DECIPHER_SCRIPT: f'/{SKILLS}.md#decipher-script',
-        DEMOLITIONS: f'/{SKILLS}.md#demolitions',
-        DIPLOMACY: f'/{SKILLS}.md#diplomacy',
-        DISABLE_DEVICE: f'/{SKILLS}.md#disable-device',
-        DISGUISE: f'/{SKILLS}.md#disguise',
-        DRIVE: f'/{SKILLS}.md#drive',
-        ESCAPE_ARTIST: f'/{SKILLS}.md#escape-artist',
-        FORGERY: f'/{SKILLS}.md#forgery',
-        GAMBLE: f'/{SKILLS}.md#gamble',
-        GATHER_INFORMATION: f'/{SKILLS}.md#gather-information',
-        HANDLE_ANIMAL: f'/{SKILLS}.md#handle-animal',
-        HIDE: f'/{SKILLS}.md#hide',
-        INTIMIDATE: f'/{SKILLS}.md#intimidate',
-        INVESTIGATE: f'/{SKILLS}.md#investigate',
-        JUMP: f'/{SKILLS}.md#jump',
-        LISTEN: f'/{SKILLS}.md#listen',
-        MOVE_SILENTLY: f'/{SKILLS}.md#move-silently',
-        TECHNOLOGY: f'/{SKILLS}.md#technology',
-        NAVIGATE: f'/{SKILLS}.md#navigate',
-        PERFORM: f'/{SKILLS}.md#perform',
-        PILOT: f'/{SKILLS}.md#pilot',
-        PROFESSION: f'/{SKILLS}.md#profession',
-        READ_WRITE_LANGUAGE: f'/{SKILLS}.md#readwrite-language',
-        REPAIR: f'/{SKILLS}.md#repair',
-        RESEARCH: f'/{SKILLS}.md#research',
-        RIDE: f'/{SKILLS}.md#ride',
-        SEARCH: f'/{SKILLS}.md#search',
-        SENSE_MOTIVE: f'/{SKILLS}.md#sense-motive',
-        SLEIGHT_OF_HAND: f'/{SKILLS}.md#sleight-of-hand',
-        SPEAK_LANGUAGE: f'/{SKILLS}.md#speak-language',
-        SPOT: f'/{SKILLS}.md#spot',
-        SURVIVAL: f'/{SKILLS}.md#survival',
-        SWIM: f'/{SKILLS}.md#swim',
-        TREAT_INJURY: f'/{SKILLS}.md#treat-injury',
-        TUMBLE: f'/{SKILLS}.md#tumble',
+        INDEX: f'/Skills.md',
+        BALANCE: f'.md#balance',
+        BLUFF: f'.md#bluff',
+        CLIMB: f'.md#climb',
+        CONCENTRATION: f'.md#concentration',
+        CRAFT: f'.md#craft',
+        CRAFT_CHEMICAL: f'.md#craft-chemical',
+        CRAFT_ELECTRONIC: f'.md#craft-electronic',
+        CRAFT_MECHANICAL: f'.md#craft-mechanical',
+        CRAFT_PHARMACEUTICAL: f'.md#craft-pharmaceutical',
+        CRAFT_STRUCTURAL: f'.md#craft-structural',
+        CRAFT_VISUAL_ART: f'.md#craft-visual-art',
+        CRAFT_WRITING: f'.md#craft-writing',
+        COMPUTER_USE: f'.md#computer-use',
+        DECIPHER_SCRIPT: f'.md#decipher-script',
+        DEMOLITIONS: f'.md#demolitions',
+        DIPLOMACY: f'.md#diplomacy',
+        DISABLE_DEVICE: f'.md#disable-device',
+        DISGUISE: f'.md#disguise',
+        DRIVE: f'.md#drive',
+        ESCAPE_ARTIST: f'.md#escape-artist',
+        FORGERY: f'.md#forgery',
+        GAMBLE: f'.md#gamble',
+        GATHER_INFORMATION: f'.md#gather-information',
+        HANDLE_ANIMAL: f'.md#handle-animal',
+        HIDE: f'.md#hide',
+        INTIMIDATE: f'.md#intimidate',
+        INVESTIGATE: f'.md#investigate',
+        JUMP: f'.md#jump',
+        LISTEN: f'.md#listen',
+        MOVE_SILENTLY: f'.md#move-silently',
+        TECHNOLOGY: f'.md#technology',
+        NAVIGATE: f'.md#navigate',
+        PERFORM: f'.md#perform',
+        PILOT: f'.md#pilot',
+        PROFESSION: f'.md#profession',
+        READ_WRITE_LANGUAGE: f'.md#readwrite-language',
+        REPAIR: f'.md#repair',
+        RESEARCH: f'.md#research',
+        RIDE: f'.md#ride',
+        SEARCH: f'.md#search',
+        SENSE_MOTIVE: f'.md#sense-motive',
+        SLEIGHT_OF_HAND: f'.md#sleight-of-hand',
+        SPEAK_LANGUAGE: f'.md#speak-language',
+        SPOT: f'.md#spot',
+        SURVIVAL: f'.md#survival',
+        SWIM: f'.md#swim',
+        TREAT_INJURY: f'.md#treat-injury',
+        TUMBLE: f'.md#tumble',
     },
-    FUTURED20: {
-        INDEX: f'/{FUTURED20}',
+    FUTURE: {
+        INDEX: f'',
         CYBERNETICS: {
-            INDEX: f'/{FUTURED20}/{CYBERNETICS}.md',
+            INDEX: f'/{CYBERNETICS}.md',
         },
-        ENVIRONMENTS: f'/{FUTURED20}/Environments.md',
+        ENVIRONMENTS: f'/Environments.md',
+        EQUIPMENT: f'./Equipment.md',
         CLASSES: {
-            INDEX: f'/{FUTURED20}/{CLASSES}.md',
-            AMBASSADOR: f'/{FUTURED20}/{CLASSES}/{AMBASSADOR}.md',
-            DOGFIGHTER: f'/{FUTURED20}/{CLASSES}/{DOGFIGHTER}.md',
-            DREADNAUGHT: f'/{FUTURED20}/{CLASSES}/{DREADNAUGHT}.md',
-            ENGINEER: f'/{FUTURED20}/{CLASSES}/{ENGINEER}.md',
-            EXPLORER: f'/{FUTURED20}/{CLASSES}/{EXPLORER}.md',
-            FIELD_OFFICER: f'/{FUTURED20}/{CLASSES}/{FIELD_OFFICER}.md',
-            HELIX_WARRIOR: f'/{FUTURED20}/{CLASSES}/{HELIX_WARRIOR}.md',
-            MECHA_JOCKEY: f'/{FUTURED20}/{CLASSES}/{MECHA_JOCKEY}.md',
-            SPACE_MONKEY: f'/{FUTURED20}/{CLASSES}/{SPACE_MONKEY}.md',
-            SWINDLER: f'/{FUTURED20}/{CLASSES}/Swindler.md',
-            TECHNOSAVANT: f'/{FUTURED20}/{CLASSES}/{TECHNOSAVANT}.md',
-            TRACER: f'/{FUTURED20}/{CLASSES}/{TRACER}.md',
-            XENOPHILE: f'/{FUTURED20}/{CLASSES}/{XENOPHILE}.md'
+            INDEX: f'{CLASSES}.md',
+            AMBASSADOR: f'{CLASSES}.md#ambassador',
+            DOGFIGHTER: f'{CLASSES}.md#dogfighter',
+            DREADNAUGHT: f'{CLASSES}.md#dreadnought',
+            ENGINEER: f'{CLASSES}.md#engineer',
+            EXPLORER: f'{CLASSES}.md#explorer',
+            FIELD_OFFICER: f'{CLASSES}.md#field-officer',
+            HELIX_WARRIOR: f'{CLASSES}.md#helix-warrior',
+            MECHA_JOCKEY: f'{CLASSES}.md#mecha-jockey',
+            SPACE_MONKEY: f'{CLASSES}.md#space-monkey',
+            SWINDLER: f'{CLASSES}.md#swindler',
+            TECHNOSAVANT: f'{CLASSES}.md#technosavant',
+            TRACER: f'{CLASSES}.md#tracer',
+            XENOPHILE: f'{CLASSES}.md#xenophile'
         },
         MUTATIONS: {
-            INDEX: f'/{FUTURED20}/{MUTATIONS}.md',
-            ABILITY_DECAY: f'/{FUTURED20}/{MUTATIONS}.md#ability-decay-drawback',
-            ACIDIC_SALIVA: f'/{FUTURED20}/{MUTATIONS}.md#acidic-saliva-minor',
-            ADRENALINE_JOLT: f'/{FUTURED20}/{MUTATIONS}.md#adrenaline-jolt-minor',
-            BLOOD_HUNGER: f'/{FUTURED20}/{MUTATIONS}.md#blood-hunger-drawback',
-            BRITTLE_BONES: f'/{FUTURED20}/{MUTATIONS}.md#brittle-bones-drawback',
-            CLAWS: f'/{FUTURED20}/{MUTATIONS}.md#claws-minor',
-            COMBAT_FEAR: f'/{FUTURED20}/{MUTATIONS}.md#combat-fear-drawback',
-            CYBERNETIC_DEPENDENCY: f'/{FUTURED20}/{MUTATIONS}.md#cybernetic-dependency-drawback',
-            DARKVISION: f'/{FUTURED20}/{MUTATIONS}.md#darkvision-minor',
-            ECHOLOCATOR: f'/{FUTURED20}/{MUTATIONS}.md#echolocator-major',
-            ELASTICITY: f'/{FUTURED20}/{MUTATIONS}.md#elasticity-major',
-            ENERGY_ABSORPTION: f'/{FUTURED20}/{MUTATIONS}.md#energy-absorption-major',
-            ENERGY_DIFFUSION: f'/{FUTURED20}/{MUTATIONS}.md#energy-diffusion-minor',
-            ENLARGED_FORM: f'/{FUTURED20}/{MUTATIONS}.md#enlarged-form-major',
-            EXOSKELETON: f'/{FUTURED20}/{MUTATIONS}.md#exoskeleton-major',
-            EXTRA_ARMS: f'/{FUTURED20}/{MUTATIONS}.md#extra-arms-major',
-            EXTRA_DIGITS: f'/{FUTURED20}/{MUTATIONS}.md#extra-digits-cosmetic',
-            FANGS: f'/{FUTURED20}/{MUTATIONS}.md#fangs-minor',
-            FESTERING_SORES: f'/{FUTURED20}/{MUTATIONS}.md#festering-sores-drawback',
-            FINS: f'/{FUTURED20}/{MUTATIONS}.md#fins-cosmetic',
-            FORCE_BARRIER: f'/{FUTURED20}/{MUTATIONS}.md#force-barrier-minor',
-            FORKED_TONGUE: f'/{FUTURED20}/{MUTATIONS}.md#forked-tongue-cosmetic',
-            FRAILTY: f'/{FUTURED20}/{MUTATIONS}.md#frailty-drawback',
-            GAZING_EYE: f'/{FUTURED20}/{MUTATIONS}.md#gazing-eye-major',
-            GILLS: f'/{FUTURED20}/{MUTATIONS}.md#gills-minor',
-            GREAT_HORNS: f'/{FUTURED20}/{MUTATIONS}.md#great-horns-minor',
-            HEAT_COLD_SUSCEPTIBILITY: f'/{FUTURED20}/{MUTATIONS}.md#heat-cold-susceptibility-drawback',
-            HORNS: f'/{FUTURED20}/{MUTATIONS}.md#horns-cosmetic',
-            HYPERSENSITIVITY: f'/{FUTURED20}/{MUTATIONS}.md#hypersensitivity-minor',
-            LEAPER: f'/{FUTURED20}/{MUTATIONS}.md#leaper-minor',
-            LETHARGY: f'/{FUTURED20}/{MUTATIONS}.md#lethargy-drawback',
-            LIGHT_SENSITIVITY: f'/{FUTURED20}/{MUTATIONS}.md#light-sensitivity-drawback',
-            LOST_ARM: f'/{FUTURED20}/{MUTATIONS}.md#lost-arm-drawback',
-            MINDSLAVE: f'/{FUTURED20}/{MUTATIONS}.md#mindslave-drawback',
-            NEUTRAD_DEPENDENCY: f'/{FUTURED20}/{MUTATIONS}.md#neutrad-dependency-drawback',
-            PHEROMONE_ATTRACTION: f'/{FUTURED20}/{MUTATIONS}.md#pheromone-attraction-major',
-            PHEROMONE_REPULSION: f'/{FUTURED20}/{MUTATIONS}.md#pheromone-repulsion-drawback',
-            POISONOUS_BLOOD: f'/{FUTURED20}/{MUTATIONS}.md#poisonous-blood-drawback',
-            PREHENSILE_TAIL: f'/{FUTURED20}/{MUTATIONS}.md#prehensile-tail-major',
-            PRICKLY_PEAR: f'/{FUTURED20}/{MUTATIONS}.md#prickly-pear-major',
-            RADIOACTIVE: f'/{FUTURED20}/{MUTATIONS}.md#radioactive-major',
-            RAPID_AGING: f'/{FUTURED20}/{MUTATIONS}.md#rapid-aging-drawback',
-            REDUCED_SPEED: f'/{FUTURED20}/{MUTATIONS}.md#reduced-speed-drawback',
-            SCALY_ARMOR: f'/{FUTURED20}/{MUTATIONS}.md#scaly-armor-minor',
-            SCALY_SKIN: f'/{FUTURED20}/{MUTATIONS}.md#scaly-skin-cosmetic',
-            SCENT: f'/{FUTURED20}/{MUTATIONS}.md#scent-minor',
-            SECOND_WIND: f'/{FUTURED20}/{MUTATIONS}.md#second-wind-minor',
-            SKELETAL_REINFORCEMENT: f'/{FUTURED20}/{MUTATIONS}.md#skeletal-reinforcement-major',
-            SMOKESCREEN: f'/{FUTURED20}/{MUTATIONS}.md#smokescreen-minor',
-            STINGER: f'/{FUTURED20}/{MUTATIONS}.md#stinger-major',
-            TAIL: f'/{FUTURED20}/{MUTATIONS}.md#tail-minor',
-            TELEKINETIC_MIND: f'/{FUTURED20}/{MUTATIONS}.md#telekinetic-mind-major',
-            TELEPATHY: f'/{FUTURED20}/{MUTATIONS}.md#telepathy-major',
-            TENTACLE: f'/{FUTURED20}/{MUTATIONS}.md#tentacle-major',
-            THICK_FUR_COAT: f'/{FUTURED20}/{MUTATIONS}.md#thick-fur-coat-minor',
-            THIN_FUR_COAT: f'/{FUTURED20}/{MUTATIONS}.md#thin-fur-coat-cosmetic',
-            THIN_SKIN: f'/{FUTURED20}/{MUTATIONS}.md#thin-skin-drawback',
-            ULTRA_IMMUNE_SYSTEM: f'/{FUTURED20}/{MUTATIONS}.md#ultra-immune-system-minor',
-            ULTRAVIOLET_ALLERGY: f'/{FUTURED20}/{MUTATIONS}.md#ultraviolet-allergy-drawback',
-            UNNATURAL_EYES: f'/{FUTURED20}/{MUTATIONS}.md#unnatural-eyes-cosmetic',
-            UNNATURAL_HAIR: f'/{FUTURED20}/{MUTATIONS}.md#unnatural-hair-cosmetic',
-            UNNATURAL_SKIN: f'/{FUTURED20}/{MUTATIONS}.md#unnatural-skin-cosmetic',
-            UNNATURAL_VOICE: f'/{FUTURED20}/{MUTATIONS}.md#unnatural-voice-cosmetic',
-            VENOMOUS_BITE: f'/{FUTURED20}/{MUTATIONS}.md#venomous-bite-major',
-            VEXING_VOICE: f'/{FUTURED20}/{MUTATIONS}.md#vexing-voice-major',
-            WALL_CRAWLER: f'/{FUTURED20}/{MUTATIONS}.md#wall-crawler-minor',
-            WEAK_IMMUNE_SYSTEM: f'/{FUTURED20}/{MUTATIONS}.md#weak-immune-system-drawback',
-            WEBBED_DIGITS: f'/{FUTURED20}/{MUTATIONS}.md#webbed-digits-minor',
-            WINGS: f'/{FUTURED20}/{MUTATIONS}.md#wings-major',
-            X_RAY_VISION: f'/{FUTURED20}/{MUTATIONS}.md#x-ray-vision-major'
+            INDEX: f'/{MUTATIONS}.md',
+            ABILITY_DECAY: f'/{MUTATIONS}.md#ability-decay',
+            ACIDIC_SALIVA: f'/{MUTATIONS}.md#acidic-saliva',
+            ADRENALINE_JOLT: f'/{MUTATIONS}.md#adrenaline-jolt',
+            BLOOD_HUNGER: f'/{MUTATIONS}.md#blood-hunger',
+            BRITTLE_BONES: f'/{MUTATIONS}.md#brittle-bones',
+            CLAWS: f'/{MUTATIONS}.md#claws',
+            COMBAT_FEAR: f'/{MUTATIONS}.md#combat-fear',
+            CYBERNETIC_DEPENDENCY: f'/{MUTATIONS}.md#cybernetic-dependency',
+            DARKVISION: f'/{MUTATIONS}.md#darkvision',
+            ECHOLOCATOR: f'/{MUTATIONS}.md#echolocator',
+            ELASTICITY: f'/{MUTATIONS}.md#elasticity',
+            ENERGY_ABSORPTION: f'/{MUTATIONS}.md#energy-absorption',
+            ENERGY_DIFFUSION: f'/{MUTATIONS}.md#energy-diffusion',
+            ENLARGED_FORM: f'/{MUTATIONS}.md#enlarged-form',
+            EXOSKELETON: f'/{MUTATIONS}.md#exoskeleton',
+            EXTRA_ARMS: f'/{MUTATIONS}.md#extra-arms',
+            EXTRA_DIGITS: f'/{MUTATIONS}.md#extra-digits',
+            FANGS: f'/{MUTATIONS}.md#fangs',
+            FESTERING_SORES: f'/{MUTATIONS}.md#festering-sores',
+            FINS: f'/{MUTATIONS}.md#fins',
+            FORCE_BARRIER: f'/{MUTATIONS}.md#force-barrier',
+            FORKED_TONGUE: f'/{MUTATIONS}.md#forked-tongue',
+            FRAILTY: f'/{MUTATIONS}.md#frailty',
+            GAZING_EYE: f'/{MUTATIONS}.md#gazing-eye',
+            GILLS: f'/{MUTATIONS}.md#gills',
+            GREAT_HORNS: f'/{MUTATIONS}.md#great-horns',
+            HEAT_COLD_SUSCEPTIBILITY: f'/{MUTATIONS}.md#heatcold-susceptibility',
+            HORNS: f'/{MUTATIONS}.md#horns',
+            HYPERSENSITIVITY: f'/{MUTATIONS}.md#hypersensitivity',
+            LEAPER: f'/{MUTATIONS}.md#leaper',
+            LETHARGY: f'/{MUTATIONS}.md#lethargy',
+            LIGHT_SENSITIVITY: f'/{MUTATIONS}.md#light-sensitivity',
+            LOST_ARM: f'/{MUTATIONS}.md#lost-arm',
+            MINDSLAVE: f'/{MUTATIONS}.md#mindslave',
+            NEUTRAD_DEPENDENCY: f'/{MUTATIONS}.md#neutrad-dependency',
+            PHEROMONE_ATTRACTION: f'/{MUTATIONS}.md#pheromone-attraction',
+            PHEROMONE_REPULSION: f'/{MUTATIONS}.md#pheromone-repulsion',
+            POISONOUS_BLOOD: f'/{MUTATIONS}.md#poisonous-blood',
+            PREHENSILE_TAIL: f'/{MUTATIONS}.md#prehensile-tail',
+            PRICKLY_PEAR: f'/{MUTATIONS}.md#prickly-pear',
+            RADIOACTIVE: f'/{MUTATIONS}.md#radioactive',
+            RAPID_AGING: f'/{MUTATIONS}.md#rapid-aging',
+            REDUCED_SPEED: f'/{MUTATIONS}.md#reduced-speed',
+            SCALY_ARMOR: f'/{MUTATIONS}.md#scaly-armor',
+            SCALY_SKIN: f'/{MUTATIONS}.md#scaly-skin',
+            SCENT: f'/{MUTATIONS}.md#scent',
+            SECOND_WIND: f'/{MUTATIONS}.md#second-wind',
+            SKELETAL_REINFORCEMENT: f'/{MUTATIONS}.md#skeletal-reinforcement',
+            SMOKESCREEN: f'/{MUTATIONS}.md#smokescreen',
+            STINGER: f'/{MUTATIONS}.md#stinger',
+            TAIL: f'/{MUTATIONS}.md#tail',
+            TELEKINETIC_MIND: f'/{MUTATIONS}.md#telekinetic-mind',
+            TELEPATHY: f'/{MUTATIONS}.md#telepathy',
+            TENTACLE: f'/{MUTATIONS}.md#tentacle',
+            THICK_FUR_COAT: f'/{MUTATIONS}.md#thick-fur-coat',
+            THIN_FUR_COAT: f'/{MUTATIONS}.md#thin-fur-coat',
+            THIN_SKIN: f'/{MUTATIONS}.md#thin-skin',
+            ULTRA_IMMUNE_SYSTEM: f'/{MUTATIONS}.md#ultra-immune-system',
+            ULTRAVIOLET_ALLERGY: f'/{MUTATIONS}.md#ultraviolet-allergy',
+            UNNATURAL_EYES: f'/{MUTATIONS}.md#unnatural-eyes',
+            UNNATURAL_HAIR: f'/{MUTATIONS}.md#unnatural-hair',
+            UNNATURAL_SKIN: f'/{MUTATIONS}.md#unnatural-skin',
+            UNNATURAL_VOICE: f'/{MUTATIONS}.md#unnatural-voice',
+            VENOMOUS_BITE: f'/{MUTATIONS}.md#venomous-bite',
+            VEXING_VOICE: f'/{MUTATIONS}.md#vexing-voice',
+            WALL_CRAWLER: f'/{MUTATIONS}.md#wall-crawler',
+            WEAK_IMMUNE_SYSTEM: f'/{MUTATIONS}.md#weak-immune-system',
+            WEBBED_DIGITS: f'/{MUTATIONS}.md#webbed-digits',
+            WINGS: f'/{MUTATIONS}.md#wings',
+            X_RAY_VISION: f'/{MUTATIONS}.md#x-ray-vision'
         },
     AVP: {
         RACES:{
