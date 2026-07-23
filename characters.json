@@ -1,1 +1,12 @@
-{}
+{
+    "member": {
+        "id": 0,
+        "characters": [
+            {
+                "id": 0,
+                "name": "Samwise",
+                "weapons": []
+            }
+        ]
+    }
+}

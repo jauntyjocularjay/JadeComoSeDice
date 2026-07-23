@@ -23,10 +23,10 @@ DOGFIGHTER = 'Dogfighter'
 DREADNAUGHT = 'Dreadnaught'
 ENGINEER = 'Engineer'
 EXPLORER = 'Explorer'
-FIELD_OFFICER = 'FieldOfficer'
-HELIX_WARRIOR = 'HelixWarrior'
-MECHA_JOCKEY = 'MechaJockey'
-SPACE_MONKEY = 'SpaceMonkey'
+FIELD_OFFICER = 'Field Officer'
+HELIX_WARRIOR = 'Helix Warrior'
+MECHA_JOCKEY = 'Mecha Jockey'
+SPACE_MONKEY = 'Space Monkey'
 SWINDLER = 'Swindler'
 TECHNOSAVANT = 'Technosavant'
 TRACER = 'Tracer'
@@ -214,12 +214,16 @@ D20 = {
         TUMBLE: f'.md#tumble',
     },
     FUTURE: {
-        INDEX: f'',
+        INDEX: f'Future.md',
         CYBERNETICS: {
             INDEX: f'/{CYBERNETICS}.md',
         },
-        ENVIRONMENTS: f'/Environments.md',
-        EQUIPMENT: f'./Equipment.md',
+        ENVIRONMENTS: {
+            INDEX: f'/Environments.md'
+        },
+        EQUIPMENT: {
+            INDEX: f'./Equipment.md'
+        },
         CLASSES: {
             INDEX: f'{CLASSES}.md',
             AMBASSADOR: f'{CLASSES}.md#ambassador',
