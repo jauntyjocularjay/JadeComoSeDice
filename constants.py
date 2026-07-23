@@ -18,6 +18,33 @@ CYBERNETICS = 'Cybernetics'
 RACES = 'Races'
 
 CLASSES = 'Classes'
+
+# Basic Classes
+BASIC_CLASSES = 'Basic Classes'
+CHARISMATIC_HERO = 'Charismatic Hero'
+DEDICATED_HERO = 'Dedicated Hero'
+FAST_HERO = 'Fast Hero'
+SMART_HERO = 'Smart Hero'
+STRONG_HERO = 'Strong Hero'
+TOUGH_HERO = 'Tough Hero'
+
+# Arcana Classes
+ARCANE_ARRANGER = 'Arcane Arranger'
+ARCANE_WEAPONMASTER = 'Arcane Weaponmaster'
+GLAMOURIST = 'Glamourist'
+MYSTIC = 'Mystic'
+PSIONIC_AGENT = 'Psionic Agent'
+SHADOW_HUNTER = 'Shadow Hunter'
+SHADOWJACK = 'Shadowjack'
+SPEED_DEMON = 'Speed Demon'
+STREET_WARRIOR = 'Street Warrior'
+SWASHBUCKLER = 'Swashbuckler'
+TECHNO_MAGE = 'Techno Mage'
+THRASHER = 'Thrasher'
+WILDLORD = 'Wildlord'
+
+# Future Classes
+FUTURE = 'Future'
 AMBASSADOR = 'Ambassador'
 DOGFIGHTER = 'Dogfighter'
 DREADNAUGHT = 'Dreadnaught'
@@ -32,7 +59,27 @@ TECHNOSAVANT = 'Technosavant'
 TRACER = 'Tracer'
 XENOPHILE = 'Xenophile'
 
-ENVIRONMENTS = 'environments'
+# Modern Classes
+ACOLYTE = 'Acolyte'
+BATTLE_MIND = 'Battle Mind'
+BODYGUARD = 'Bodyguard'
+DAREDEVIL = 'Daredevil'
+FIELD_MEDIC = 'Field Medic'
+FIELD_SCIENTIST = 'Field Scientist'
+GUNSLINGER = 'Gunslinger'
+INFILTRATOR = 'Infiltrator'
+INVESTIGATOR = 'Investigator'
+MAGE = 'Mage'
+MARTIAL_ARTIST = 'Martial Artist'
+NEGOTIATOR = 'Negotiator'
+OCCULTIST = 'Occultist'
+PERSONALITY = 'Personality'
+SHADOW_SLAYER = 'Shadow Slayer'
+SOLDIER = 'Soldier'
+TECHIE = 'Techie'
+TELEPATH = 'Telepath'
+
+ENVIRONMENTS = 'Environments'
 
 SKILLS = 'Skills'
 BALANCE = 'Balance'
@@ -84,7 +131,7 @@ SWIM = 'Swim'
 TREAT_INJURY = 'Treat-Injury'
 TUMBLE = 'Tumble'
 
-
+# Mutations
 MUTATIONS = 'Mutations'
 ABILITY_DECAY = 'Ability-Decay'
 ACIDIC_SALIVA = 'Acidic-Saliva'
@@ -213,17 +260,31 @@ D20 = {
         TREAT_INJURY: f'.md#treat-injury',
         TUMBLE: f'.md#tumble',
     },
+    BASIC_CLASSES: {
+        ACOLYTE: f'/{ACOLYTE}.md',
+        BATTLE_MIND: f'/{BATTLE_MIND}.md',
+        BODYGUARD: f'/{BODYGUARD}.md',
+        DAREDEVIL: f'/{DAREDEVIL}.md',
+        FIELD_MEDIC: f'/{FIELD_MEDIC}.md',
+        FIELD_SCIENTIST: f'/{FIELD_SCIENTIST}.md',
+        GUNSLINGER: f'/{GUNSLINGER}.md',
+        INFILTRATOR: f'/{INFILTRATOR}.md',
+        INVESTIGATOR: f'/{INVESTIGATOR}.md',
+        MAGE: f'/{MAGE}.md',
+        MARTIAL_ARTIST: f'/{MARTIAL_ARTIST}.md',
+        NEGOTIATOR: f'/{NEGOTIATOR}.md',
+        OCCULTIST: f'/{OCCULTIST}.md',
+        PERSONALITY: f'/{PERSONALITY}.md',
+        SHADOW_SLAYER: f'/{SHADOW_SLAYER}.md',
+        SOLDIER: f'/{SOLDIER}.md',
+        TECHIE: f'/{TECHIE}.md',
+        TELEPATH: f'/{TELEPATH}.md'
+    },
     FUTURE: {
-        INDEX: f'Future.md',
-        CYBERNETICS: {
-            INDEX: f'/{CYBERNETICS}.md',
-        },
-        ENVIRONMENTS: {
-            INDEX: f'/Environments.md'
-        },
-        EQUIPMENT: {
-            INDEX: f'./Equipment.md'
-        },
+        INDEX: f'{FUTURE}.md',
+        CYBERNETICS: { INDEX: f'/{CYBERNETICS}.md'},
+        ENVIRONMENTS: { INDEX: f'/{ENVIRONMENTS}.md' },
+        EQUIPMENT: { INDEX: f'./{EQUIPMENT}.md' },
         CLASSES: {
             INDEX: f'{CLASSES}.md',
             AMBASSADOR: f'{CLASSES}.md#ambassador',
@@ -313,12 +374,11 @@ D20 = {
             WINGS: f'/{MUTATIONS}.md#wings',
             X_RAY_VISION: f'/{MUTATIONS}.md#x-ray-vision'
         },
-    AVP: {
-        RACES:{
-            YAUTJA: f'/{AVP}/{RACES}/{YAUTJA}.md',
-            ENGINEERS: f'/{AVP}/{RACES}/{ENGINEERS}.md'
+        AVP: {
+            RACES:{
+                YAUTJA: f'/{AVP}/{RACES}/{YAUTJA}.md',
+                ENGINEERS: f'/{AVP}/{RACES}/{ENGINEERS}.md'
+            }
         }
     }
-    }
-    
 }
