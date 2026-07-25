@@ -13,9 +13,7 @@ token = os.getenv(DISCORD_TOKEN)
 
 handler = logging.FileHandler(filename=DSCRD[LOG], encoding=UTF8, mode=W)
 
-description = """ An example bot to showcase the discord.ext.commands extension module.
-There are a number of utility commands being showcased here.
-"""
+description = """ A bot to serve information from the D20 Resources SRT """
 
 intents = discord.Intents.default()
 intents.members = True
@@ -64,7 +62,7 @@ async def role(ctx, message: str):
 
 @bot.command(aliases = ['classes'])
 async def roles(ctx):
-    result = f'Future D20 classes: {D20_BASE}/{FUTURE}/{D20[FUTURE][CLASSES][INDEX]}'
+    result = f'Basic Classes: {D20_BASE}/{D20[BASIC_CLASSES][INDEX]} \n' + f'Future Classes: {D20_BASE}/{FUTURE}/{D20[FUTURE][CLASSES][INDEX]} \n' # + f'Arcana Classes: {D20_BASE}/{ARCANA}/{D20[ARCANA][CLASSES][INDEX]}'
     await ctx.send(result)
 
 @bot.command(aliases = ['equip'])
@@ -97,6 +95,30 @@ async def skill(ctx, message):
             result = f'Here is the info for the {x} skill: {link + y}'
             break
     
+    await ctx.send(result)
+
+@bot.command()
+async def mutations(ctx):
+
+    link = D20_BASE + D20[FUTURE][MUTATIONS][INDEX]
+
+    await ctx.send(f'Here is the mutations reference:\n{link}')
+
+@bot.command()
+async def mutation(ctx, message):
+    message = message.lower()
+
+    link = D20_BASE + D20[FUTURE][MUTATIONS][INDEX]
+
+    result = f'I couldn\'t find that mutation. Check and see if it is in one of these sections: {link}'
+    
+    for x,y in D20[FUTURE][MUTATIONS].items():
+        x = x.lower()
+        if x in message:
+            link += link + D20[FUTURE][MUTATIONS][y.upper()]
+            result = f'Here is the info for the {x} skill:\n{link}'
+            break
+
     await ctx.send(result)
 
 bot.run(str(token))
