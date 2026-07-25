@@ -115,8 +115,7 @@ async def mutation(ctx, message):
     for x,y in D20[FUTURE][MUTATIONS].items():
         x = x.lower()
         if x in message:
-            print(f'y: {y}')
-            link += link + D20[FUTURE][MUTATIONS][y.upper()]
+            link += link + D20[FUTURE][MUTATIONS][message.upper()]
             result = f'Here is the info for the {x} skill:\n{link}'
             break
 
