@@ -50,7 +50,7 @@ async def role(ctx, message: str):
     
     link = f'{D20_BASE}/{FUTURE}/{D20[FUTURE][INDEX]}'
 
-    result = f'I couldn\'t find the class `{message}`. Try checking these out: FutureD20 Classes {link}.'
+    result = f'I couldn\'t find the class `{message}`. Try checking these out: Future Classes {link}.'
 
     for x,y in D20[FUTURE][CLASSES].items():
         x = x.lower()
@@ -68,7 +68,7 @@ async def roles(ctx):
 
 @bot.command(aliases = ['equip'])
 async def equipment(ctx):
-    result = f'FutureD20 Equipment: {D20_BASE}/{FUTURE}/{D20[FUTURE][EQUIPMENT][INDEX]}'
+    result = f'Future Equipment: {D20_BASE}/{FUTURE}/{D20[FUTURE][EQUIPMENT][INDEX]}'
     await ctx.send(result)
 
 @bot.command(aliases = ['augmentations', 'augmentation', 'cybernetic'])
