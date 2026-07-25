@@ -297,23 +297,23 @@ D20 = {
         EQUIPMENT: { INDEX: f'./{EQUIPMENT}.md' },
         CLASSES: {
             INDEX: f'{CLASSES}.md',
-            AMBASSADOR: f'{CLASSES}.md#ambassador',
-            DOGFIGHTER: f'{CLASSES}.md#dogfighter',
-            DREADNAUGHT: f'{CLASSES}.md#dreadnought',
-            ENGINEER: f'{CLASSES}.md#engineer',
-            EXPLORER: f'{CLASSES}.md#explorer',
-            FIELD_OFFICER: f'{CLASSES}.md#field-officer',
-            HELIX_WARRIOR: f'{CLASSES}.md#helix-warrior',
-            MECHA_JOCKEY: f'{CLASSES}.md#mecha-jockey',
-            SPACE_MONKEY: f'{CLASSES}.md#space-monkey',
-            SWINDLER: f'{CLASSES}.md#swindler',
-            TECHNOSAVANT: f'{CLASSES}.md#technosavant',
-            TRACER: f'{CLASSES}.md#tracer',
-            XENOPHILE: f'{CLASSES}.md#xenophile'
+            AMBASSADOR: f'#ambassador',
+            DOGFIGHTER: f'#dogfighter',
+            DREADNAUGHT: f'#dreadnought',
+            ENGINEER: f'#engineer',
+            EXPLORER: f'#explorer',
+            FIELD_OFFICER: f'#field-officer',
+            HELIX_WARRIOR: f'#helix-warrior',
+            MECHA_JOCKEY: f'#mecha-jockey',
+            SPACE_MONKEY: f'#space-monkey',
+            SWINDLER: f'#swindler',
+            TECHNOSAVANT: f'#technosavant',
+            TRACER: f'#tracer',
+            XENOPHILE: f'#xenophile'
         },
         MUTATIONS: {
             # Update Mutations to simplify specific mutation links
-            INDEX: f'/{MUTATIONS}.md',
+            INDEX: f'/{FUTURE}/{MUTATIONS}.md',
             ABILITY_DECAY: f'#ability-decay',
             ACIDIC_SALIVA: f'#acidic-saliva',
             ADRENALINE_JOLT: f'#adrenaline-jolt',
@@ -384,12 +384,12 @@ D20 = {
             WEBBED_DIGITS: f'#webbed-digits',
             WINGS: f'#wings',
             X_RAY_VISION: f'#x-ray-vision'
-        },
-        AVP: {
-            RACES:{
-                YAUTJA: f'/{AVP}/{RACES}/{YAUTJA}.md',
-                ENGINEERS: f'/{AVP}/{RACES}/{ENGINEERS}.md'
-            }
+        }
+    },
+    AVP: {
+        RACES:{
+            YAUTJA: f'/{AVP}/{RACES}/{YAUTJA}.md',
+            ENGINEERS: f'/{AVP}/{RACES}/{ENGINEERS}.md'
         }
     }
 }

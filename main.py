@@ -41,7 +41,7 @@ async def roll(ctx, dice: str):
     outcomes = [random.randint(1, limit) for r in range(rolls)]
     total = sum(x for x in outcomes)
 
-    result = f'{ctx.author.mention} rolled `{limit}d{rolls}` for:\n```{outcomes}```\nand a total of `{total}`'
+    result = f'{ctx.author.mention} rolled `{rolls}d{limit}` for:\n```{outcomes}```\nand a total of `{total}`'
     await ctx.send(result)
 
 @bot.command(aliases = ['class'])
@@ -50,12 +50,13 @@ async def role(ctx, message: str):
     
     link = f'{D20_BASE}/{FUTURE}/{D20[FUTURE][INDEX]}'
 
-    result = f'I couldn\'t find the class in `{message}`. Try checking these out: FutureD20 Classes {link}.'
+    result = f'I couldn\'t find the class `{message}`. Try checking these out: FutureD20 Classes {link}.'
 
     for x,y in D20[FUTURE][CLASSES].items():
         x = x.lower()
         if x in message:
-            result = f'Here is the info for the {x} class: {link}{y}'
+            link += y
+            result = f'Here is the info for the {y[1:]} class: {link}'
             break
 
     await ctx.send(result)
@@ -67,7 +68,7 @@ async def roles(ctx):
 
 @bot.command(aliases = ['equip'])
 async def equipment(ctx):
-    result = f'FutureD20 Equipment: {D20_BASE}/{FUTURE}/{D20[FUTURE][EQUIPMENT]}'
+    result = f'FutureD20 Equipment: {D20_BASE}/{FUTURE}/{D20[FUTURE][EQUIPMENT][INDEX]}'
     await ctx.send(result)
 
 @bot.command(aliases = ['augmentations', 'augmentation', 'cybernetic'])
@@ -106,19 +107,25 @@ async def mutations(ctx):
 
 @bot.command()
 async def mutation(ctx, message):
-    message = message.lower()
+    message = parse_lookup(message)
+    print(f'message: {message}')
 
     link = D20_BASE + D20[FUTURE][MUTATIONS][INDEX]
+    print(f'Link: {link}')
 
     result = f'I couldn\'t find that mutation. Check and see if it is in one of these sections: {link}'
     
     for x,y in D20[FUTURE][MUTATIONS].items():
-        x = x.lower()
-        if x in message:
-            link += link + D20[FUTURE][MUTATIONS][message.upper()]
-            result = f'Here is the info for the {x} skill:\n{link}'
+        # x = x.lower()
+        print(f'x: {x}, y: {y}')
+        if message.casefold() in x.casefold():
+            link += y
+            result = f'Here is the info for the {y[1:]} skill:\n{link}'
             break
 
     await ctx.send(result)
+
+def parse_lookup(message: str):
+    return f'{message.upper().replace(' ', '_').replace('-','_')}'
 
 bot.run(str(token))
