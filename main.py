@@ -63,7 +63,7 @@ async def role(ctx, message: str):
 
 @bot.command(aliases = ['classes'])
 async def roles(ctx):
-    result = f'Basic Classes: {D20_BASE}/{D20[BASIC_CLASSES][INDEX]} \n' + f'Future Classes: {D20_BASE}/{FUTURE}/{D20[FUTURE][CLASSES][INDEX]} \n' # + f'Arcana Classes: {D20_BASE}/{ARCANA}/{D20[ARCANA][CLASSES][INDEX]}'
+    result = f'Basic Classes: {D20_BASE}/{D20[BASIC_CLASSES][INDEX]} \n' + f'Future Classes: {D20_BASE}/{FUTURE}/{D20[FUTURE][CLASSES][INDEX]} \n' + f'Arcana Classes: {D20_BASE}/{ARCANA}/{D20[ARCANA][CLASSES][INDEX]}'
     await ctx.send(result)
 
 @bot.command(aliases = ['equip'])
