@@ -44,27 +44,31 @@ async def roll(ctx, dice: str):
     result = f'{ctx.author.mention} rolled `{rolls}d{limit}` for:\n```{outcomes}```\nand a total of `{total}`'
     await ctx.send(result)
 
-@bot.command(aliases = ['class'])
-async def role(ctx, message: str):
-    message = message.lower()
-    
-    link = f'{D20_BASE}/{FUTURE}/{D20[FUTURE][INDEX]}'
-
-    result = f'I couldn\'t find the class `{message}`. Try checking these out: Future Classes {link}.'
-
-    for x,y in D20[FUTURE][CLASSES].items():
-        x = x.lower()
-        if x in message:
-            link += y
-            result = f'Here is the info for the {y[1:]} class: {link}'
-            break
-
-    await ctx.send(result)
-
 @bot.command(aliases = ['classes'])
 async def roles(ctx):
-    result = f'Basic Classes: {D20_BASE}/{D20[BASIC_CLASSES][INDEX]} \n' + f'Future Classes: {D20_BASE}/{FUTURE}/{D20[FUTURE][CLASSES][INDEX]} \n' + f'Arcana Classes: {D20_BASE}/{ARCANA}/{D20[ARCANA][CLASSES][INDEX]}'
+    basic_classes = f'{D20_BASE}/{BASICS}/{D20[BASICS][CLASSES]}'
+    modern_classes = f'{D20_BASE}/{MODERN}/{D20[MODERN][CLASSES]}'
+    future_classes = f'{D20_BASE}/{FUTURE}/{D20[FUTURE][CLASSES]}'
+    arcana_classes = f'{D20_BASE}/{ARCANA}/{D20[ARCANA][CLASSES]}'
+
+    result = f'Basic Classes: {basic_classes} \n' + f'Modern Classes: {modern_classes} \n' + f'Future Classes: {future_classes} \n' + f'Arcana Classes: {arcana_classes}'
     await ctx.send(result)
+
+@bot.command(aliases = ['class'])
+async def role(ctx, message: str):
+    message = parse_index(message)
+    link = f'{D20_BASE}/set/{CLASSES}.md'
+    sets = [BASICS, MODERN, FUTURE, ARCANA]
+
+    for set in sets:
+        print(f'checking {set} for {message}')
+        if(D20[set][ROLES].count(message) != 0):
+            link = f'{D20_BASE}/{set}/{CLASSES}.md#' + message
+            print(link)
+            await ctx.send(link)
+            return
+
+    await roles(ctx)
 
 @bot.command(aliases = ['equip'])
 async def equipment(ctx):
@@ -77,10 +81,9 @@ async def cybernetics(ctx):
 
 @bot.command()
 async def skills(ctx):
-    
     link = D20_BASE + D20[SKILLS][INDEX]
     
-    await ctx.send(f'Here is the skill reference:\n{link}')
+    await ctx.send(f'Here is the skill reference:\n {link}')
 
 @bot.command()
 async def skill(ctx, message):
@@ -107,25 +110,20 @@ async def mutations(ctx):
 
 @bot.command()
 async def mutation(ctx, message):
-    message = parse_lookup(message)
+    message = parse_index(message)
     print(f'message: {message}')
 
     link = D20_BASE + D20[FUTURE][MUTATIONS][INDEX]
     print(f'Link: {link}')
 
-    result = f'I couldn\'t find that mutation. Check and see if it is in one of these sections: {link}'
-    
-    for x,y in D20[FUTURE][MUTATIONS].items():
-        # x = x.lower()
-        print(f'x: {x}, y: {y}')
-        if message.casefold() in x.casefold():
-            link += y
-            result = f'Here is the info for the {y[1:]} skill:\n{link}'
-            break
+    if(D20[FUTURE][MUTATION].count(message) != 0):
+        await ctx.send(f'{link}#{message}')
+        return
 
-    await ctx.send(result)
+    await ctx.send(mutations)
 
-def parse_lookup(message: str):
-    return f'{message.upper().replace(' ', '_').replace('-','_')}'
+def parse_index(message: str):
+    message = message.lower()
+    return message.replace(' ', '-').replace('_', '-')
 
 bot.run(str(token))

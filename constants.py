@@ -2,9 +2,10 @@
 D20_BASE = 'https://github.com/jauntyjocularjay/D20Resources/tree/master'
 README = 'readme'
 LINK = 'link'
-ARCANA = 'Arcana'
-FUTURE = 'Future'
-MODERN = 'Modern'
+ARCANA = 'arcana'
+FUTURE = 'future'
+MODERN = 'modern'
+MENACES = 'menaces'
 DISCORD_TOKEN = 'DISCORD_TOKEN'
 UTF8 = 'utf-8'
 W = 'w'
@@ -13,304 +14,284 @@ LOG = 'log'
 
 INDEX = 'index'
 
-EQUIPMENT = 'Equipment'
+EQUIPMENT = 'equipment'
 
-CYBERNETICS = 'Cybernetics'
+CYBERNETICS = 'cybernetics'
 
-RACES = 'Races'
+RACES = 'races'
 
-CLASSES = 'Classes'
+CLASSES = 'classes'
+ROLES = 'roles'
 
 # Basic Classes
-BASIC_CLASSES = 'Basic Classes'
-CHARISMATIC_HERO = 'Charismatic Hero'
-DEDICATED_HERO = 'Dedicated Hero'
-FAST_HERO = 'Fast Hero'
-SMART_HERO = 'Smart Hero'
-STRONG_HERO = 'Strong Hero'
-TOUGH_HERO = 'Tough Hero'
+BASICS = 'basics'
+BASIC_CLASSES = 'basic-classes'
+CHARISMATIC_HERO = 'charismatic-hero'
+DEDICATED_HERO = 'dedicated-hero'
+FAST_HERO = 'fast-hero'
+SMART_HERO = 'smart-hero'
+STRONG_HERO = 'strong-hero'
+TOUGH_HERO = 'tough-hero'
 
 # Arcana Classes
-ARCANE_ARRANGER = 'Arcane Arranger'
-ARCANE_WEAPONMASTER = 'Arcane Weaponmaster'
-GLAMOURIST = 'Glamourist'
-MYSTIC = 'Mystic'
-PSIONIC_AGENT = 'Psionic Agent'
-SHADOW_HUNTER = 'Shadow Hunter'
-SHADOWJACK = 'Shadowjack'
-SPEED_DEMON = 'Speed Demon'
-STREET_WARRIOR = 'Street Warrior'
-SWASHBUCKLER = 'Swashbuckler'
-TECHNO_MAGE = 'Techno Mage'
-THRASHER = 'Thrasher'
-WILDLORD = 'Wildlord'
+ARCANE_ARRANGER = 'arcane-arranger'
+ARCANE_WEAPONMASTER = 'arcane-weaponmaster'
+GLAMOURIST = 'glamourist'
+MYSTIC = 'mystic'
+PSIONIC_AGENT = 'ssionic-agent'
+SHADOW_HUNTER = 'shadow-hunter'
+SHADOWJACK = 'shadowjack'
+SPEED_DEMON = 'speed-demon'
+STREET_WARRIOR = 'street-warrior'
+SWASHBUCKLER = 'swashbuckler'
+TECHNO_MAGE = 'techno-mage'
+THRASHER = 'thrasher'
+WILDLORD = 'wildlord'
 
 # Future Classes
-FUTURE = 'Future'
-AMBASSADOR = 'Ambassador'
-DOGFIGHTER = 'Dogfighter'
-DREADNAUGHT = 'Dreadnaught'
-ENGINEER = 'Engineer'
-EXPLORER = 'Explorer'
-FIELD_OFFICER = 'Field Officer'
-HELIX_WARRIOR = 'Helix Warrior'
-MECHA_JOCKEY = 'Mecha Jockey'
-SPACE_MONKEY = 'Space Monkey'
-SWINDLER = 'Swindler'
-TECHNOSAVANT = 'Technosavant'
-TRACER = 'Tracer'
-XENOPHILE = 'Xenophile'
+FUTURE = 'future'
+AMBASSADOR = 'ambassador'
+DOGFIGHTER = 'dogfighter'
+DREADNAUGHT = 'dreadnaught'
+ENGINEER = 'engineer'
+EXPLORER = 'explorer'
+FIELD_OFFICER = 'field-officer'
+HELIX_WARRIOR = 'helix-warrior'
+MECHA_JOCKEY = 'mecha-jockey'
+SPACE_MONKEY = 'space-monkey'
+SWINDLER = 'swindler'
+TECHNOSAVANT = 'technosavant'
+TRACER = 'tracer'
+XENOPHILE = 'xenophile'
 
 # Modern Classes
-ACOLYTE = 'Acolyte'
-BATTLE_MIND = 'Battle Mind'
-BODYGUARD = 'Bodyguard'
-DAREDEVIL = 'Daredevil'
-FIELD_MEDIC = 'Field Medic'
-FIELD_SCIENTIST = 'Field Scientist'
-GUNSLINGER = 'Gunslinger'
-INFILTRATOR = 'Infiltrator'
-INVESTIGATOR = 'Investigator'
-MAGE = 'Mage'
-MARTIAL_ARTIST = 'Martial Artist'
-NEGOTIATOR = 'Negotiator'
-OCCULTIST = 'Occultist'
-PERSONALITY = 'Personality'
-SHADOW_SLAYER = 'Shadow Slayer'
-SOLDIER = 'Soldier'
-TECHIE = 'Techie'
-TELEPATH = 'Telepath'
+ACOLYTE = 'acolyte'
+BATTLE_MIND = 'battle-mind'
+BODYGUARD = 'bodyguard'
+DAREDEVIL = 'daredevil'
+FIELD_MEDIC = 'field-medic'
+FIELD_SCIENTIST = 'field-scientist'
+GUNSLINGER = 'gunslinger'
+INFILTRATOR = 'infiltrator'
+INVESTIGATOR = 'investigator'
+MAGE = 'mage'
+MARTIAL_ARTIST = 'martial-artist'
+NEGOTIATOR = 'negotiator'
+OCCULTIST = 'occultist'
+PERSONALITY = 'personality'
+SHADOW_SLAYER = 'shadow-slayer'
+SOLDIER = 'soldier'
+TECHIE = 'techie'
+TELEPATH = 'telepath'
 
-ENVIRONMENTS = 'Environments'
+ENVIRONMENTS = 'environments'
 
-SKILLS = 'Skills'
-BALANCE = 'Balance'
-BLUFF = 'Bluff'
-CLIMB = 'Climb'
-CONCENTRATION = 'Concentration'
-CRAFT = 'Craft'
-CRAFT_CHEMICAL = 'Craft-Chemical'
-CRAFT_ELECTRONIC = 'Craft-Electronic'
-CRAFT_MECHANICAL = 'Craft-Mechanical'
-CRAFT_PHARMACEUTICAL = 'Craft-Pharmaceutical'
-CRAFT_STRUCTURAL = 'Craft-Structural'
-CRAFT_VISUAL_ART = 'Craft-Visual-Art'
-CRAFT_WRITING = 'Craft-Writing'
-COMPUTER_USE = 'Computer-Use'
-DECIPHER_SCRIPT = 'Decipher-Script'
-DEMOLITIONS = 'Demolitions'
-DIPLOMACY = 'Diplomacy'
-DISABLE_DEVICE = 'Disable-Device'
-DISGUISE = 'Disguise'
-DRIVE = 'Drive'
-ESCAPE_ARTIST = 'Escape-Artist'
-FORGERY = 'Forgery'
-GAMBLE = 'Gamble'
-GATHER_INFORMATION = 'Gather-Information'
-HANDLE_ANIMAL = 'Handle-Animal'
-HIDE = 'Hide'
-INTIMIDATE = 'Intimidate'
-INVESTIGATE = 'Investigate'
-JUMP = 'Jump'
-LISTEN = 'Listen'
-MOVE_SILENTLY = 'Move-Silently'
-TECHNOLOGY = 'Technology'
-NAVIGATE = 'Navigate'
-PERFORM = 'Perform'
-PILOT = 'Pilot'
-PROFESSION = 'Profession'
-READ_WRITE_LANGUAGE = 'ReadWrite-Language'
-REPAIR = 'Repair'
-RESEARCH = 'Research'
-RIDE = 'Ride'
-SEARCH = 'Search'
-SENSE_MOTIVE = 'Sense-Motive'
-SLEIGHT_OF_HAND = 'Sleight-of-Hand'
-SPEAK_LANGUAGE = 'Speak-Language'
-SPOT = 'Spot'
-SURVIVAL = 'Survival'
-SWIM = 'Swim'
-TREAT_INJURY = 'Treat-Injury'
-TUMBLE = 'Tumble'
+SKILLS = 'skills'
+BALANCE = 'balance'
+BLUFF = 'bluff'
+CLIMB = 'climb'
+CONCENTRATION = 'concentration'
+CRAFT = 'craft'
+CRAFT_CHEMICAL = 'craft-chemical'
+CRAFT_ELECTRONIC = 'craft-electronic'
+CRAFT_MECHANICAL = 'craft-mechanical'
+CRAFT_PHARMACEUTICAL = 'craft-pharmaceutical'
+CRAFT_STRUCTURAL = 'craft-structural'
+CRAFT_VISUAL_ART = 'craft-visual-art'
+CRAFT_WRITING = 'craft-writing'
+COMPUTER_USE = 'computer-use'
+DECIPHER_SCRIPT = 'decipher-script'
+DEMOLITIONS = 'demolitions'
+DIPLOMACY = 'diplomacy'
+DISABLE_DEVICE = 'disable-device'
+DISGUISE = 'disguise'
+DRIVE = 'drive'
+ESCAPE_ARTIST = 'escape-artist'
+FORGERY = 'forgery'
+GAMBLE = 'gamble'
+GATHER_INFORMATION = 'gather-information'
+HANDLE_ANIMAL = 'handle-animal'
+HIDE = 'hide'
+INTIMIDATE = 'intimidate'
+INVESTIGATE = 'investigate'
+JUMP = 'jump'
+LISTEN = 'listen'
+MOVE_SILENTLY = 'move-silently'
+NAVIGATE = 'navigate'
+PERFORM = 'perform'
+PILOT = 'pilot'
+PROFESSION = 'profession'
+READ_WRITE_LANGUAGE = 'read-write-language'
+REPAIR = 'repair'
+RESEARCH = 'research'
+RIDE = 'ride'
+SEARCH = 'search'
+SENSE_MOTIVE = 'sense-motive'
+SLEIGHT_OF_HAND = 'sleight-of-hand'
+SPEAK_LANGUAGE = 'speak-language'
+SPOT = 'spot'
+SURVIVAL = 'survival'
+SWIM = 'swim'
+TECHNOLOGY = 'technology'
+TREAT_INJURY = 'treat-injury'
+TUMBLE = 'tumble'
 
 # Mutations
-MUTATIONS = 'Mutations'
-ABILITY_DECAY = 'Ability-Decay'
-ACIDIC_SALIVA = 'Acidic-Saliva'
-ADRENALINE_JOLT = 'Adrenaline-Jolt'
-BLOOD_HUNGER = 'Blood-Hunger'
-BRITTLE_BONES = 'Brittle-Bones'
-CLAWS = 'Claws'
-COMBAT_FEAR = 'Combat-Fear'
-CYBERNETIC_DEPENDENCY = 'Cybernetic-Dependency'
-DARKVISION = 'Darkvision'
-ECHOLOCATOR = 'Echolocator'
-ELASTICITY = 'Elasticity'
-ENERGY_ABSORPTION = 'Energy-Absorption'
-ENERGY_DIFFUSION = 'Energy-Diffusion'
-ENLARGED_FORM = 'Enlarged-Form'
-EXOSKELETON = 'Exoskeleton'
-EXTRA_ARMS = 'Extra-Arms'
-EXTRA_DIGITS = 'Extra-Digits'
-FANGS = 'Fangs'
-FESTERING_SORES = 'Festering-Sores'
-FINS = 'Fins'
-FORCE_BARRIER = 'Force-Barrier'
-FORKED_TONGUE = 'Forked-Tongue'
-FRAILTY = 'Frailty'
-GAZING_EYE = 'Gazing-Eye'
-GILLS = 'Gills'
-GREAT_HORNS = 'Great-Horns'
-HEAT_COLD_SUSCEPTIBILITY = 'Heat/Cold-Susceptibility'
-HORNS = 'Horns'
-HYPERSENSITIVITY = 'Hypersensitivity'
-LEAPER = 'Leaper'
-LETHARGY = 'Lethargy'
-LIGHT_SENSITIVITY = 'Light-Sensitivity'
-LOST_ARM = 'Lost-Arm'
-MINDSLAVE = 'Mindslave'
-NEUTRAD_DEPENDENCY = 'Neutrad-Dependency'
-PHEROMONE_ATTRACTION = 'Pheromone-Attraction'
-PHEROMONE_REPULSION = 'Pheromone-Repulsion'
-POISONOUS_BLOOD = 'Poisonous-Blood'
-PREHENSILE_TAIL = 'Prehensile-Tail'
-PRICKLY_PEAR = 'Prickly-Pear'
-RADIOACTIVE = 'Radioactive'
-RAPID_AGING = 'Rapid-Aging'
-REDUCED_SPEED = 'Reduced-Speed'
-SCALY_ARMOR = 'Scaly-Armor'
-SCALY_SKIN = 'Scaly-Skin'
-SCENT = 'Scent'
-SECOND_WIND = 'Second-Wind'
-SKELETAL_REINFORCEMENT = 'Skeletal-Reinforcement'
-SMOKESCREEN = 'Smokescreen'
-STINGER = 'Stinger'
-TAIL = 'Tail'
-TELEKINETIC_MIND = 'Telekinetic-Mind'
-TELEPATHY = 'Telepathy'
-TENTACLE = 'Tentacle'
-THICK_FUR_COAT = 'Thick-Fur-Coat'
-THIN_FUR_COAT = 'Thin-Fur-Coat'
-THIN_SKIN = 'Thin-Skin'
-ULTRA_IMMUNE_SYSTEM = 'Ultra-Immune-System'
-ULTRAVIOLET_ALLERGY = 'Ultraviolet-Allergy'
-UNNATURAL_EYES = 'Unnatural-Eyes'
-UNNATURAL_HAIR = 'Unnatural-Hair'
-UNNATURAL_SKIN = 'Unnatural-Skin'
-UNNATURAL_VOICE = 'Unnatural-Voice'
-VENOMOUS_BITE = 'Venomous-Bite'
-VEXING_VOICE = 'Vexing-Voice'
-WALL_CRAWLER = 'Wall-Crawler'
-WEAK_IMMUNE_SYSTEM = 'Weak-Immune-System'
-WEBBED_DIGITS = 'Webbed-Digits'
-WINGS = 'Wings'
-X_RAY_VISION = 'X-Ray-Vision'
+MUTATION = 'mutation'
+MUTATIONS = 'mutations'
+ABILITY_DECAY = 'ability-decay'
+ACIDIC_SALIVA = 'acidic-saliva'
+ADRENALINE_JOLT = 'adrenaline-jolt'
+BLOOD_HUNGER = 'blood-hunger'
+BRITTLE_BONES = 'brittle-bones'
+CLAWS = 'claws'
+COMBAT_FEAR = 'combat-fear'
+CYBERNETIC_DEPENDENCY = 'cybernetic-dependency'
+DARKVISION = 'darkvision'
+ECHOLOCATOR = 'echolocator'
+ELASTICITY = 'elasticity'
+ENERGY_ABSORPTION = 'energy-absorption'
+ENERGY_DIFFUSION = 'energy-diffusion'
+ENLARGED_FORM = 'enlarged-form'
+EXOSKELETON = 'exoskeleton'
+EXTRA_ARMS = 'extra-arms'
+EXTRA_DIGITS = 'extra-digits'
+FANGS = 'fangs'
+FESTERING_SORES = 'festering-sores'
+FINS = 'fins'
+FORCE_BARRIER = 'force-barrier'
+FORKED_TONGUE = 'forked-tongue'
+FRAILTY = 'frailty'
+GAZING_EYE = 'gazing-eye'
+GILLS = 'gills'
+GREAT_HORNS = 'great-horns'
+HEAT_COLD_SUSCEPTIBILITY = 'heat-cold-susceptibility'
+HORNS = 'horns'
+HYPERSENSITIVITY = 'hypersensitivity'
+LEAPER = 'leaper'
+LETHARGY = 'lethargy'
+LIGHT_SENSITIVITY = 'light-sensitivity'
+LOST_ARM = 'lost-arm'
+MINDSLAVE = 'mindslave'
+NEUTRAD_DEPENDENCY = 'neutrad-dependency'
+PHEROMONE_ATTRACTION = 'pheromone-attraction'
+PHEROMONE_REPULSION = 'pheromone-repulsion'
+POISONOUS_BLOOD = 'poisonous-blood'
+PREHENSILE_TAIL = 'prehensile-tail'
+PRICKLY_PEAR = 'prickly-pear'
+RADIOACTIVE = 'radioactive'
+RAPID_AGING = 'rapid-Aging'
+REDUCED_SPEED = 'reduced-speed'
+SCALY_ARMOR = 'scaly-armor'
+SCALY_SKIN = 'scaly-skin'
+SCENT = 'scent'
+SECOND_WIND = 'second-wind'
+SKELETAL_REINFORCEMENT = 'skeletal-reinforcement'
+SMOKESCREEN = 'smokescreen'
+STINGER = 'stinger'
+TAIL = 'tail'
+TELEKINETIC_MIND = 'telekinetic-mind'
+TELEPATHY = 'telepathy'
+TENTACLE = 'tentacle'
+THICK_FUR_COAT = 'thick-fur-coat'
+THIN_FUR_COAT = 'thin-fur-coat'
+THIN_SKIN = 'thin-skin'
+ULTRA_IMMUNE_SYSTEM = 'ultra-immune-system'
+ULTRAVIOLET_ALLERGY = 'ultraviolet-allergy'
+UNNATURAL_EYES = 'unnatural-eyes'
+UNNATURAL_HAIR = 'unnatural-hair'
+UNNATURAL_SKIN = 'unnatural-skin'
+UNNATURAL_VOICE = 'unnatural-voice'
+VENOMOUS_BITE = 'venomous-bite'
+VEXING_VOICE = 'vexing-voice'
+WALL_CRAWLER = 'wall-crawler'
+WEAK_IMMUNE_SYSTEM = 'weak-immune-system'
+WEBBED_DIGITS = 'webbed-digits'
+WINGS = 'wings'
+X_RAY_VISION = 'x-ray-vision'
 
-AVP = 'AliensVPredator'
-YAUTJA = 'Yautja'
-ENGINEERS = 'Engineers'
+# Menaces
+MENACES = 'menaces'
+
+AVP = 'aliens-v-predator'
+YAUTJA = 'yautja'
+ENGINEERS = 'engineers'
 
 D20 = {
-    SKILLS: {
-        INDEX: f'/Skills.md',
-        BALANCE: f'.md#balance',
-        BLUFF: f'.md#bluff',
-        CLIMB: f'.md#climb',
-        CONCENTRATION: f'.md#concentration',
-        CRAFT: f'.md#craft',
-        CRAFT_CHEMICAL: f'.md#craft-chemical',
-        CRAFT_ELECTRONIC: f'.md#craft-electronic',
-        CRAFT_MECHANICAL: f'.md#craft-mechanical',
-        CRAFT_PHARMACEUTICAL: f'.md#craft-pharmaceutical',
-        CRAFT_STRUCTURAL: f'.md#craft-structural',
-        CRAFT_VISUAL_ART: f'.md#craft-visual-art',
-        CRAFT_WRITING: f'.md#craft-writing',
-        COMPUTER_USE: f'.md#computer-use',
-        DECIPHER_SCRIPT: f'.md#decipher-script',
-        DEMOLITIONS: f'.md#demolitions',
-        DIPLOMACY: f'.md#diplomacy',
-        DISABLE_DEVICE: f'.md#disable-device',
-        DISGUISE: f'.md#disguise',
-        DRIVE: f'.md#drive',
-        ESCAPE_ARTIST: f'.md#escape-artist',
-        FORGERY: f'.md#forgery',
-        GAMBLE: f'.md#gamble',
-        GATHER_INFORMATION: f'.md#gather-information',
-        HANDLE_ANIMAL: f'.md#handle-animal',
-        HIDE: f'.md#hide',
-        INTIMIDATE: f'.md#intimidate',
-        INVESTIGATE: f'.md#investigate',
-        JUMP: f'.md#jump',
-        LISTEN: f'.md#listen',
-        MOVE_SILENTLY: f'.md#move-silently',
-        TECHNOLOGY: f'.md#technology',
-        NAVIGATE: f'.md#navigate',
-        PERFORM: f'.md#perform',
-        PILOT: f'.md#pilot',
-        PROFESSION: f'.md#profession',
-        READ_WRITE_LANGUAGE: f'.md#readwrite-language',
-        REPAIR: f'.md#repair',
-        RESEARCH: f'.md#research',
-        RIDE: f'.md#ride',
-        SEARCH: f'.md#search',
-        SENSE_MOTIVE: f'.md#sense-motive',
-        SLEIGHT_OF_HAND: f'.md#sleight-of-hand',
-        SPEAK_LANGUAGE: f'.md#speak-language',
-        SPOT: f'.md#spot',
-        SURVIVAL: f'.md#survival',
-        SWIM: f'.md#swim',
-        TREAT_INJURY: f'.md#treat-injury',
-        TUMBLE: f'.md#tumble',
-    },
-    BASIC_CLASSES: {
-        INDEX: f'{CLASSES}/Basic.md',
-        ACOLYTE: f'/{ACOLYTE}.md',
-        BATTLE_MIND: f'/{BATTLE_MIND}.md',
-        BODYGUARD: f'/{BODYGUARD}.md',
-        DAREDEVIL: f'/{DAREDEVIL}.md',
-        FIELD_MEDIC: f'/{FIELD_MEDIC}.md',
-        FIELD_SCIENTIST: f'/{FIELD_SCIENTIST}.md',
-        GUNSLINGER: f'/{GUNSLINGER}.md',
-        INFILTRATOR: f'/{INFILTRATOR}.md',
-        INVESTIGATOR: f'/{INVESTIGATOR}.md',
-        MAGE: f'/{MAGE}.md',
-        MARTIAL_ARTIST: f'/{MARTIAL_ARTIST}.md',
-        NEGOTIATOR: f'/{NEGOTIATOR}.md',
-        OCCULTIST: f'/{OCCULTIST}.md',
-        PERSONALITY: f'/{PERSONALITY}.md',
-        SHADOW_SLAYER: f'/{SHADOW_SLAYER}.md',
-        SOLDIER: f'/{SOLDIER}.md',
-        TECHIE: f'/{TECHIE}.md',
-        TELEPATH: f'/{TELEPATH}.md'
+    BASICS: {
+        INDEX: f'{BASICS}.md',
+        SKILLS: {
+            INDEX: f'{BASICS}/{SKILLS}.md',
+            BALANCE: f'#{BALANCE.lower()}',
+            BLUFF: f'#{BLUFF.lower()}',
+            CLIMB: f'#{CLIMB.lower()}',
+            CONCENTRATION: f'#{CONCENTRATION.lower()}',
+            CRAFT: f'#{CRAFT.lower()}',
+            CRAFT_CHEMICAL: f'#{CRAFT_CHEMICAL.lower()}',
+            CRAFT_ELECTRONIC: f'#{CRAFT_ELECTRONIC.lower()}',
+            CRAFT_MECHANICAL: f'#{CRAFT_MECHANICAL.lower()}',
+            CRAFT_PHARMACEUTICAL: f'#{CRAFT_PHARMACEUTICAL.lower()}',
+            CRAFT_STRUCTURAL: f'#{CRAFT_STRUCTURAL.lower()}',
+            CRAFT_VISUAL_ART: f'#{CRAFT_VISUAL_ART.lower()}',
+            CRAFT_WRITING: f'#{CRAFT_WRITING.lower()}',
+            COMPUTER_USE: f'#{COMPUTER_USE.lower()}',
+            DECIPHER_SCRIPT: f'#{DECIPHER_SCRIPT.lower()}',
+            DEMOLITIONS: f'#{DEMOLITIONS.lower()}',
+            DIPLOMACY: f'#{DIPLOMACY.lower()}',
+            DISABLE_DEVICE: f'#{DISABLE_DEVICE.lower()}',
+            DISGUISE: f'#{DISGUISE.lower()}',
+            DRIVE: f'#{DRIVE.lower()}',
+            ESCAPE_ARTIST: f'#{ESCAPE_ARTIST.lower()}',
+            FORGERY: f'#{FORGERY.lower()}',
+            GAMBLE: f'#{GAMBLE.lower()}',
+            GATHER_INFORMATION: f'#{GATHER_INFORMATION.lower()}',
+            HANDLE_ANIMAL: f'#{HANDLE_ANIMAL.lower()}',
+            HIDE: f'#{HIDE.lower()}',
+            INTIMIDATE: f'#{INTIMIDATE.lower()}',
+            INVESTIGATE: f'#{INVESTIGATE.lower()}',
+            JUMP: f'#{JUMP.lower()}',
+            LISTEN: f'#{LISTEN.lower()}',
+            MOVE_SILENTLY: f'#{MOVE_SILENTLY.lower()}',
+            TECHNOLOGY: f'#{TECHNOLOGY.lower()}',
+            NAVIGATE: f'#{NAVIGATE.lower()}',
+            PERFORM: f'#{PERFORM.lower()}',
+            PILOT: f'#{PILOT.lower()}',
+            PROFESSION: f'#{PROFESSION.lower()}',
+            READ_WRITE_LANGUAGE: f'#{READ_WRITE_LANGUAGE.lower()}',
+            REPAIR: f'#{REPAIR.lower()}',
+            RESEARCH: f'#{RESEARCH.lower()}',
+            RIDE: f'#{RIDE.lower()}',
+            SEARCH: f'#{SEARCH.lower()}',
+            SENSE_MOTIVE: f'#{SENSE_MOTIVE.lower()}',
+            SLEIGHT_OF_HAND: f'#{SLEIGHT_OF_HAND.lower()}',
+            SPEAK_LANGUAGE: f'#{SPEAK_LANGUAGE.lower()}',
+            SPOT: f'#{SPOT.lower()}',
+            SURVIVAL: f'#{SURVIVAL.lower()}',
+            SWIM: f'#{SWIM.lower()}',
+            TREAT_INJURY: f'#{TREAT_INJURY.lower()}',
+            TUMBLE: f'#{TUMBLE.lower()}',
+        },
+        ROLES: [ CHARISMATIC_HERO, DEDICATED_HERO, FAST_HERO, SMART_HERO, STRONG_HERO, TOUGH_HERO ],
+        CLASSES: f'{CLASSES}.md'
     },
     MODERN: {
         INDEX: f'{MODERN}.md',
-        CLASSES: {
-            ACOLYTE: f'#acolyte',
-            BATTLE_MIND: f'#battle-mind'
-        },
+        ROLES: [ ACOLYTE, BATTLE_MIND, BODYGUARD, DAREDEVIL, FIELD_MEDIC, FIELD_SCIENTIST, GUNSLINGER, INFILTRATOR, INVESTIGATOR, MAGE, MARTIAL_ARTIST, NEGOTIATOR, OCCULTIST, PERSONALITY, SHADOW_SLAYER, SOLDIER, TECHIE, TELEPATH ],
+        CLASSES: f'{CLASSES}.md',
+    },
+    ARCANA: {
+        INDEX: f'{ARCANA}.md',
+        ROLES: [ ARCANE_ARRANGER, ARCANE_WEAPONMASTER, GLAMOURIST, MYSTIC, PSIONIC_AGENT, SHADOW_HUNTER, SHADOWJACK, SPEED_DEMON, STREET_WARRIOR, SWASHBUCKLER, TECHNO_MAGE, THRASHER, WILDLORD ],
+        CLASSES: f'{CLASSES}.md'
     },
     FUTURE: {
         INDEX: f'{FUTURE}.md',
-        CYBERNETICS: { INDEX: f'/{CYBERNETICS}.md'},
-        ENVIRONMENTS: { INDEX: f'/{ENVIRONMENTS}.md' },
-        EQUIPMENT: { INDEX: f'./{EQUIPMENT}.md' },
-        CLASSES: {
-            INDEX: f'{CLASSES}.md',
-            AMBASSADOR: f'#ambassador',
-            DOGFIGHTER: f'#dogfighter',
-            DREADNAUGHT: f'#dreadnought',
-            ENGINEER: f'#engineer',
-            EXPLORER: f'#explorer',
-            FIELD_OFFICER: f'#field-officer',
-            HELIX_WARRIOR: f'#helix-warrior',
-            MECHA_JOCKEY: f'#mecha-jockey',
-            SPACE_MONKEY: f'#space-monkey',
-            SWINDLER: f'#swindler',
-            TECHNOSAVANT: f'#technosavant',
-            TRACER: f'#tracer',
-            XENOPHILE: f'#xenophile'
-        },
+        CYBERNETICS: { INDEX: f'{CYBERNETICS}.md'},
+        ENVIRONMENTS: { INDEX: f'{ENVIRONMENTS}.md' },
+        EQUIPMENT: { INDEX: f'{EQUIPMENT}.md' },
+        ROLES: [ AMBASSADOR, DOGFIGHTER, DREADNAUGHT, ENGINEER, EXPLORER, FIELD_OFFICER, HELIX_WARRIOR, MECHA_JOCKEY, SPACE_MONKEY, SWINDLER, TECHNOSAVANT, TRACER, XENOPHILE ],
+        CLASSES: f'{CLASSES}.md',
+        MUTATION: [ABILITY_DECAY, ACIDIC_SALIVA, ADRENALINE_JOLT, BLOOD_HUNGER, BRITTLE_BONES, CLAWS, COMBAT_FEAR, CYBERNETIC_DEPENDENCY, DARKVISION, ECHOLOCATOR, ELASTICITY, ENERGY_ABSORPTION, ENERGY_DIFFUSION, ENLARGED_FORM, EXOSKELETON, EXTRA_ARMS, EXTRA_DIGITS, FANGS, FESTERING_SORES, FINS, FORCE_BARRIER, FORKED_TONGUE, FRAILTY, GAZING_EYE, GILLS, GREAT_HORNS, HEAT_COLD_SUSCEPTIBILITY, HORNS, HYPERSENSITIVITY, LEAPER, LETHARGY, LIGHT_SENSITIVITY, LOST_ARM, MINDSLAVE, NEUTRAD_DEPENDENCY, PHEROMONE_ATTRACTION, PHEROMONE_REPULSION, POISONOUS_BLOOD, PREHENSILE_TAIL, PRICKLY_PEAR, RADIOACTIVE, RAPID_AGING, REDUCED_SPEED, SCALY_ARMOR, SCALY_SKIN, SCENT, SECOND_WIND, SKELETAL_REINFORCEMENT, SMOKESCREEN, STINGER, TAIL, TELEKINETIC_MIND, TELEPATHY, TENTACLE, THICK_FUR_COAT, THIN_FUR_COAT, THIN_SKIN, ULTRA_IMMUNE_SYSTEM, ULTRAVIOLET_ALLERGY, UNNATURAL_EYES, UNNATURAL_HAIR, UNNATURAL_SKIN, UNNATURAL_VOICE, VENOMOUS_BITE, VEXING_VOICE, WALL_CRAWLER, WEAK_IMMUNE_SYSTEM, WEBBED_DIGITS, WINGS, X_RAY_VISION ],
         MUTATIONS: {
             # Update Mutations to simplify specific mutation links
             INDEX: f'/{FUTURE}/{MUTATIONS}.md',
@@ -385,6 +366,9 @@ D20 = {
             WINGS: f'#wings',
             X_RAY_VISION: f'#x-ray-vision'
         }
+    },
+    MENACES: {
+        INDEX: f'{MENACES}.md'
     },
     AVP: {
         RACES:{
