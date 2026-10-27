@@ -81,7 +81,7 @@ async def cybernetics(ctx):
 
 @bot.command()
 async def skills(ctx):
-    link = D20_BASE + D20[SKILLS][INDEX]
+    link = f'{D20_BASE}/{D20[BASICS][SKILLS][INDEX]}'
     
     await ctx.send(f'Here is the skill reference:\n {link}')
 
@@ -89,13 +89,15 @@ async def skills(ctx):
 async def skill(ctx, message):
     message = message.lower()
 
-    link = f'{D20_BASE}/{SKILLS}'
+    link = f'{D20_BASE}/{D20[BASICS][SKILLS][INDEX]}'
 
     result = f'I couldn\'t find that skill. Check and see if it is in one of these sections: {link}'
 
-    for x,y in D20[SKILLS].items():
+    for x,y in D20[BASICS][SKILLS].items():
+        if x == INDEX:
+            continue
         x = x.lower()
-        if x in message:
+        if x in message or message in x:
             result = f'Here is the info for the {x} skill: {link + y}'
             break
     
