@@ -213,6 +213,59 @@ X_RAY_VISION = 'x-ray-vision'
 # Menaces
 MENACES = 'menaces'
 
+# Bestiary
+BESTIARY = 'bestiary'
+BEASTS = 'beasts'
+APE = 'ape'
+BAT = 'bat'
+BEAR = 'bear'
+BUGBEAR = 'bugbear'
+CAT = 'cat'
+CROCODILE = 'crocodile'
+DEINONYCHUS = 'deinonychus'
+DOG = 'dog'
+FERRET = 'ferret'
+FESTERGOG = 'festergog-vomit-fiend'
+FIEND = 'fiend'
+FLESH_GOLEM = 'flesh-golem'
+GARGOYLE = 'gargoyle'
+GNOLL = 'gnoll'
+GOBLIN = 'goblin'
+HAWK = 'hawk'
+HERD_ANIMAL = 'herd-animal'
+HORSE = 'horse'
+INVISIBLE_STALKER = 'invisible-stalker'
+KOBOLD = 'kobold'
+MEDUSA = 'medusa'
+MINOTAUR = 'minotaur'
+MONKEY = 'monkey'
+MONSTROUS_FLYTRAP = 'monstrous-flytrap'
+MONSTROUS_SPIDER = 'monstrous-spider'
+MUMMY = 'mummy'
+OGRE = 'ogre'
+OWL = 'owl'
+PUPPETEER = 'puppeteer'
+RAT = 'rat'
+RAVEN = 'raven'
+REPLACEMENT_TEMPLATE = 'replacement-template'
+ROBOT = 'robot'
+ROTLORD = 'rotlord-carrion-fiend'
+SHARK = 'shark'
+SKELETON_TEMPLATE = 'skeleton-template'
+SKINHUSKER = 'skinhusker-blade-fiend'
+SNAKE = 'snake'
+TERRESTRIAL_EFFLUVIUM = 'terrestrial-effluvium'
+TIGER = 'tiger'
+TOAD = 'toad'
+TOOTH_FAIRY = 'tooth-fairy'
+TROGLODYTE = 'troglodyte'
+TROLL = 'troll'
+VAMPIRE_TEMPLATE = 'vampire-template'
+WEREWOLF_TEMPLATE = 'werewolf-template'
+WOLF = 'wolf'
+WYRM = 'wyrm'
+ZOMBIE_TEMPLATE = 'zombie-template'
+
 AVP = 'aliens-v-predator'
 YAUTJA = 'yautja'
 ENGINEERS = 'engineers'
@@ -273,6 +326,68 @@ D20 = {
         },
         ROLES: [ CHARISMATIC_HERO, DEDICATED_HERO, FAST_HERO, SMART_HERO, STRONG_HERO, TOUGH_HERO ],
         CLASSES: f'{CLASSES}.md'
+    },
+    BESTIARY: {
+        INDEX: f'{BESTIARY}/{BESTIARY}.md',
+        BEASTS: [
+            APE, BAT, BEAR, BUGBEAR, CAT, CROCODILE, DEINONYCHUS, DOG, FERRET,
+            FESTERGOG, FIEND, FLESH_GOLEM, GARGOYLE, GNOLL, GOBLIN,
+            HAWK, HERD_ANIMAL, HORSE, INVISIBLE_STALKER, KOBOLD, MEDUSA, MINOTAUR,
+            MONKEY, MONSTROUS_FLYTRAP, MONSTROUS_SPIDER, MUMMY, OGRE, OWL, PUPPETEER,
+            RAT, RAVEN, REPLACEMENT_TEMPLATE, ROBOT, ROTLORD, SHARK,
+            SKELETON_TEMPLATE, SKINHUSKER, SNAKE, TERRESTRIAL_EFFLUVIUM,
+            TIGER, TOAD, TOOTH_FAIRY, TROGLODYTE, TROLL, VAMPIRE_TEMPLATE,
+            WEREWOLF_TEMPLATE, WOLF, WYRM, ZOMBIE_TEMPLATE,
+        ],
+        APE: f'#{APE}',
+        BAT: f'#{BAT}',
+        BEAR: f'#{BEAR}',
+        BUGBEAR: f'#{BUGBEAR}',
+        CAT: f'#{CAT}',
+        CROCODILE: f'#{CROCODILE}',
+        DEINONYCHUS: f'#{DEINONYCHUS}',
+        DOG: f'#{DOG}',
+        FERRET: f'#{FERRET}',
+        FESTERGOG: f'#{FESTERGOG}',
+        FIEND: f'#{FIEND}',
+        FLESH_GOLEM: f'#{FLESH_GOLEM}',
+        GARGOYLE: f'#{GARGOYLE}',
+        GNOLL: f'#{GNOLL}',
+        GOBLIN: f'#{GOBLIN}',
+        HAWK: f'#{HAWK}',
+        HERD_ANIMAL: f'#{HERD_ANIMAL}',
+        HORSE: f'#{HORSE}',
+        INVISIBLE_STALKER: f'#{INVISIBLE_STALKER}',
+        KOBOLD: f'#{KOBOLD}',
+        MEDUSA: f'#{MEDUSA}',
+        MINOTAUR: f'#{MINOTAUR}',
+        MONKEY: f'#{MONKEY}',
+        MONSTROUS_FLYTRAP: f'#{MONSTROUS_FLYTRAP}',
+        MONSTROUS_SPIDER: f'#{MONSTROUS_SPIDER}',
+        MUMMY: f'#{MUMMY}',
+        OGRE: f'#{OGRE}',
+        OWL: f'#{OWL}',
+        PUPPETEER: f'#{PUPPETEER}',
+        RAT: f'#{RAT}',
+        RAVEN: f'#{RAVEN}',
+        REPLACEMENT_TEMPLATE: f'#{REPLACEMENT_TEMPLATE}',
+        ROBOT: f'#{ROBOT}',
+        ROTLORD: f'#{ROTLORD}',
+        SHARK: f'#{SHARK}',
+        SKELETON_TEMPLATE: f'#{SKELETON_TEMPLATE}',
+        SKINHUSKER: f'#{SKINHUSKER}',
+        SNAKE: f'#{SNAKE}',
+        TERRESTRIAL_EFFLUVIUM: f'#{TERRESTRIAL_EFFLUVIUM}',
+        TIGER: f'#{TIGER}',
+        TOAD: f'#{TOAD}',
+        TOOTH_FAIRY: f'#{TOOTH_FAIRY}',
+        TROGLODYTE: f'#{TROGLODYTE}',
+        TROLL: f'#{TROLL}',
+        VAMPIRE_TEMPLATE: f'#{VAMPIRE_TEMPLATE}',
+        WEREWOLF_TEMPLATE: f'#{WEREWOLF_TEMPLATE}',
+        WOLF: f'#{WOLF}',
+        WYRM: f'#{WYRM}',
+        ZOMBIE_TEMPLATE: f'#{ZOMBIE_TEMPLATE}',
     },
     MODERN: {
         INDEX: f'{MODERN}.md',

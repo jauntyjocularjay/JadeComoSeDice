@@ -103,6 +103,28 @@ async def skill(ctx, message):
     
     await ctx.send(result)
 
+@bot.command(aliases = ['beasts']) # LLM Generated
+async def beast(ctx, message: str = ''):
+    link = f'{D20_BASE}/{D20[BESTIARY][INDEX]}'
+    result = f'Here is the bestiary reference: {link}'
+
+    if not message:
+        await ctx.send(result)
+        return
+
+    message = parse_index(message)
+    result = f'I couldn\'t find that beast. Check and see if it is in the bestiary: {link}'
+
+    for x, y in D20[BESTIARY].items():
+        if x in (INDEX, BEASTS):
+            continue
+        x = x.lower()
+        if x == message or x in message or message in x:
+            result = f'Here is the info for the {x} beast: {link + y}'
+            break
+
+    await ctx.send(result)
+
 @bot.command()
 async def mutations(ctx):
 

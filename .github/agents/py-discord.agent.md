@@ -1,5 +1,5 @@
 ---
-name: py-discord.agent
+name: py-discord
 description: >-
   Discord.py specialist for JadeComoSeDice and similar TTRPG DM helper bots.
   Owns prefix commands, intents, ctx.send, lookup-table wiring, and token/logging
