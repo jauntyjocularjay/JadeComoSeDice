@@ -79,31 +79,28 @@ async def equipment(ctx):
 async def cybernetics(ctx):
     await ctx.send(f'Take a look at Cybernetics Reference: \n{D20_BASE}/{FUTURE}/{D20[FUTURE][CYBERNETICS][INDEX]}')
 
-@bot.command()
-async def skills(ctx):
+@bot.command(aliases=['skills'])
+async def skill(ctx, message: str = ''):
     link = f'{D20_BASE}/{D20[BASICS][SKILLS][INDEX]}'
-    
-    await ctx.send(f'Here is the skill reference:\n {link}')
 
-@bot.command()
-async def skill(ctx, message):
+    if not message:
+        await ctx.send(f'Here is the skill reference:\n{link}')
+        return
+
     message = message.lower()
-
-    link = f'{D20_BASE}/{D20[BASICS][SKILLS][INDEX]}'
-
     result = f'I couldn\'t find that skill. Check and see if it is in one of these sections: {link}'
 
-    for x,y in D20[BASICS][SKILLS].items():
+    for x, y in D20[BASICS][SKILLS].items():
         if x == INDEX:
             continue
         x = x.lower()
         if x in message or message in x:
             result = f'Here is the info for the {x} skill: {link + y}'
             break
-    
+
     await ctx.send(result)
 
-@bot.command(aliases = ['beasts']) # LLM Generated
+@bot.command(aliases = ['beasts', 'animal', 'animals'])
 async def beast(ctx, message: str = ''):
     link = f'{D20_BASE}/{D20[BESTIARY][INDEX]}'
     result = f'Here is the bestiary reference: {link}'
