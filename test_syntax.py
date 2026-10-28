@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# LLM Generated
+
 import py_compile
 import sys
 

@@ -35,10 +35,12 @@ All commands use the `//` prefix.
 
 ### Dice
 
-- `//roll NdN`
+- `//roll NdN[, NdN ...]`
 - Aliases: `//Roll`, `//ROLL`
-- Example: `//roll 2d6`
-- Input must be in `NdN` format.
+- Examples: `//roll 2d6` and `//roll 2d6, 4d20`
+- Input may be a single `NdN` roll or a comma-separated list of rolls.
+- Each roll is reported with its label, individual outcomes, and total.
+- Multi-roll requests print each result in the same order the user supplied it.
 
 ### role
 
