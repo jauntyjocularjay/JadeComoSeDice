@@ -1,6 +1,6 @@
 # Jade's D20 Reference Bot
 
-Discord bot for quick Future D20 reference links plus a dice roller.
+Discord bot for quick Future D20 reference links plus a dice roller. Visit the [user guide](./README-User.md).
 
 ## Current Functionality
 
@@ -28,59 +28,6 @@ touch .env
 echo "DISCORD_TOKEN=your_token_here" > .env
 python -m main
 ```
-
-## Commands
-
-All commands use the `//` prefix.
-
-### Dice
-
-- `//roll NdN[, NdN ...]`
-- Aliases: `//Roll`, `//ROLL`
-- Examples: `//roll 2d6` and `//roll 2d6, 4d20`
-- Input may be a single `NdN` roll or a comma-separated list of rolls.
-- Each roll is reported with its label, individual outcomes, and total.
-- Multi-roll requests print each result in the same order the user supplied it.
-
-### role
-
-- Syntax: `//role [text]`
-- Alias: `//class`
-- Performs case-insensitive substring matching across mapped Future D20 classes.
-- Returns the first matching class anchor in Classes.md.
-- If no class matches, returns the Future D20 classes index link.
-
-### roles
-
-- Syntax: `//roles`
-- Alias: `//classes`
-- Returns the Future D20 classes index link.
-
-### equipment
-
-- Syntax: `//equipment`
-- Alias: `//equip`
-- Returns the Future D20 equipment link.
-
-### cybernetics
-
-- Syntax: `//cybernetics`
-- Aliases: `//augmentations`, `//augmentation`, `//cybernetic`
-- Returns the Future D20 cybernetics link.
-
-### skills
-
-- `//skills`
-- Alias: `//Skills`
-- provides the Future skills index link
-- Placeholder labels for Modern, Arcana, and Menaces (no links yet)
-
-### Specific Skill Lookup
-
-- Syntax: `//skill [text]`
-- Performs case-insensitive substring matching across mapped skills.
-- Returns the first matching skill anchor.
-- If no skill matches, returns a fallback Skills section link.
 
 ## Link Mapping Scope
 

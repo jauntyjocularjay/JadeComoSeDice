@@ -36,7 +36,6 @@ async def on_ready():
     print(f'Logged in as {bot.user} (ID: {bot.user.id})')
     print('------')
 
-# // LLM-Generated
 def parse_rolls(dice_expression: str):
     """Parse one or more dice expressions into randomized rolls.
 
@@ -76,7 +75,10 @@ def parse_rolls(dice_expression: str):
 
     return rolls
 
-# // LLM-Generated
+@bot.command(aliases = ['how', 'faq'])
+async def tutorial(user: str):
+    pass
+
 @bot.command(aliases = ['r'])
 async def roll(ctx, *dice_tokens: str):
     """Roll one or more dice expressions and send each result back to Discord.
@@ -159,14 +161,12 @@ async def mutation(ctx, message: str = ''):
     await ctx.send(result)
 
 def get_role_reference_links():
-    # LLM-Generated
     return '\n'.join(
         link(title, build_reference_url(D20_BASE, section, D20[section][CLASSES]))
         for section, title in ROLE_SECTIONS
     )
 
 def build_not_found_role_message():
-    # LLM-Generated
     return (
         f'I couldn\'t find that role. Please check the spelling and try again.\n\n'
         f'Here are the available role categories:\n'
@@ -175,7 +175,6 @@ def build_not_found_role_message():
     )
 
 def build_reference_url(*parts: str) -> str:
-    # LLM-Generated
     return '/'.join(part.strip('/') for part in parts if part)
 
 def lookup(reference: str, dataset: dict, query: str = '', *, item_name: str, ignore_keys=()):
@@ -218,7 +217,6 @@ def lookup(reference: str, dataset: dict, query: str = '', *, item_name: str, ig
     return result
 
 def matches_query(normalized_query: str, lookup_key: str) -> bool:
-    # LLM-Generated
     return lookup_key == normalized_query or normalized_query in lookup_key or lookup_key in normalized_query
 
 def parse_index(message: str):
