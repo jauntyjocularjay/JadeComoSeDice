@@ -75,9 +75,29 @@ def parse_rolls(dice_expression: str):
 
     return rolls
 
-@bot.command(aliases = ['how', 'faq'])
-async def tutorial(user: str):
-    pass
+@bot.command(aliases = ['how', 'faq', 'guide', 'comose', 'como-se'])
+async def tutorial(ctx, *, user: str = ''):
+    target = None
+    if ctx.message.mentions:
+        target = ctx.message.mentions[0]
+    elif user:
+        try:
+            target = await commands.MemberConverter().convert(ctx, user)
+        except commands.BadArgument:
+            target = None
+
+    if target is None:
+        await ctx.send(f'{ctx.author.mention}, please mention a user in the command, like `//tutorial @username`.')
+        return
+
+    user_guide_url = 'https://github.com/jauntyjocularjay/JadeComoSeDice/blob/master/README-User.md'
+    message = f'Here is my {link("user guide", user_guide_url)}'
+
+    try:
+        await target.send(message)
+        await ctx.send(f'{ctx.author.mention}, I sent the guide to {target.mention}.')
+    except discord.Forbidden:
+        await ctx.send(f'{ctx.author.mention}, I could not send a DM to {target.mention}. Please open the guide here: {user_guide_url}')
 
 @bot.command(aliases = ['r'])
 async def roll(ctx, *dice_tokens: str):

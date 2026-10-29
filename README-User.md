@@ -19,6 +19,19 @@ Commands are case-insensitive, so `//ROLL`, `//Role`, and `//SKILL` all work.
 
 ## Commands
 
+### Tutorial
+
+`//tutorial`
+
+Send the user guide directly to your DMs.
+
+Aliases:
+
+```text
+//how
+//faq
+```
+
 ### Dice
 
 `//roll [dice]`
